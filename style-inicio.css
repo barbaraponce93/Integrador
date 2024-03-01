@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+.caja{
+  width:940px ;
+  background-color: antiquewhite;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+ul{
+ display: inline-block;
+
+ 
+}
