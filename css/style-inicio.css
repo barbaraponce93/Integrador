@@ -23,7 +23,14 @@ html{
   font-size: 1rem;
   height: 100%;
 }
-/*cabecera*/
+
+
+
+
+/*CABECERA*/
+header{
+    background-image: url(../img/fondo2.jpg);
+}
 .nav-header {
   list-style: none;
   /*para sacarle los items que pone la lista y quede mas facherito*/
@@ -36,15 +43,40 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.header-buscador{
- border: 2px solid yellowgreen;
- display: inline-block;
 
+  position: relative;
+  height: 170px;
+  
+}
+.header-atencionPublico{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: background-color 0.5s;
+}
+.parrafo {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.5s, height 0.5s; /* Agrega una transición suave */
+
+  
+}
+
+
+
+.header-buscador{
+ /*border: 2px solid yellowgreen;*/
+ display: inline-block;
  width: 40%;
  height:50px;
  flex: 1;
  margin: 10px;
+ position: relative;
 
 }
 #lupa{
@@ -52,27 +84,36 @@ width: 100%;
 height: 100%;
 border-radius: 40px;
 font-size: 18px;
+padding-right: 30px; 
+}
+.lupa-icono{
+  width: 20px;
+  height: 20px;
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente el icono en el medio del input */
+  right: 12px; /* Ajusta la posición del icono a la derecha */
 }
 .header-logo{
-
-  border: 2px solid yellowgreen;
+/*border: 2px solid yellowgreen;*/
   flex: 1;
   margin: 10px;
   display: flex; 
   justify-content: center; 
   align-items : center;
-
- 
  
 }
 #logo-img {
   max-width: 100%; /* Asegura que el logo no se extienda más allá de su contenedor */
   height: auto; 
+  height: 200px;
+  width: 200px;
+
   
 }
 
 .header-carrito{
-  border: 2px solid yellowgreen;
+ /*border: 2px solid yellowgreen;*/
   display: inline-block;
   flex: 1;
   margin: 10px;
@@ -82,27 +123,46 @@ font-size: 18px;
 }
 .header-carrito img{
   width: 40px;
-  height: 30px;
+  height:40px;
   margin-right: 5px;/* Espacio entre el icono y el texto */
  
 }
 .header-carrito p {
   margin: 0; /* Elimina el margen predeterminado del párrafo para ajustarlo con el icono*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-nav li {
 
-  margin-right: 60px;
-  /* separar los elementos entre si, lo vemos*/
+.header-menubar{
+  /*border: 2px solid yellowgreen;*/
+
+  display: flex;
+  justify-content: center;
 }
-
-
-nav a {
+.header-menubar ul{
+  list-style: none;
+}
+.header-menubar li{
+  float:left;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 4rem ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+.header-menubar a{
   text-decoration: none;
-  /*para sacarle la linea del link y quede mas facherito*/
   color: black;
 }
+
+.header-menubar li a:hover{
+  color:whitesmoke;
+}
+
+
+
+/*MAIN*/
 main>div {
   min-height: 380px;
   height: auto;
@@ -111,7 +171,6 @@ main>div {
 
 }
 
-/*MAIN*/
 main{
   min-height: 400px;
   overflow: auto;
@@ -142,127 +201,113 @@ aside{
 
 }
 
-.header-logo{
-  width: auto;
-  display: inline-block;
-  margin: 0.5rem;
- 
+
+
+
+/*FOOTER*/
+footer{
+  background-image: url(../img/fondo2.jpg);
+  padding: 20px;
+  
 }
 
-
-
-
-.header-menubar{
-  background-color: antiquewhite;
-  display: flex;
-  justify-content: center;
-}
-.header-menubar ul{
-  list-style: none;
-}
-.header-menubar li{
-  float:left;
-  font-weight: 700;
-  text-align: center;
-  margin: 0 1rem 0;
-}
-
-
-
-
-
-
-.pie {
-  height: 200px;
-  background-color: rgb(146, 146, 69);
-
-}
-.header-menubar a{
-  text-decoration: none;
-  color: black;
-}
 
 .contenedor-footer {
   position: relative;
-
-}
-.header-menubar a:hover {
-  color: gold;
-}
-
-.img-tarjetas {
-  width: 40px;
-  height: 25px
-}
-.contacto-img {
-    width: 25px;
-    height: 25px;
-    
-}
-
-
-.contacto li {
-  list-style: none;
-  display: inline;
-
-}
-
-
-
-.navegacion li {
-  list-style: none;
-
-}
-
-.navegacion a {
-  text-decoration: none;
-}
-
-.img-tarjetas {
-  width: 40px;
-  height: 25px;
-
-}
-.contenedor-footer{
   display: flex;
+  justify-content: space-around;
+  padding: 20px; /* Ajusta el espacio interior del contenedor */
+  box-sizing: border-box;
+ height:190px;
 }
 
-.contacto-img {
-  width: 25px;
-  height: 25px;
-}
 
 .tarjetas{
   /* border: 3px black solid; */
   display: inline-block;
   flex: 1;
-
-
-}
-.contacto{
-  /* border: 3px black solid; */
-  display: inline-block;
-  flex: 1;
-}
-
-.contacto li {
-  display: flex;
-  flex-direction: row;
-
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 .navegacion{
   /* border: 3px black solid; */
   display: inline-block;
   flex: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+
 }
 
+.contacto{
+ /* border: 3px black solid;*/
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del contenedor a columna */
+  align-items: center; 
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+ 
+ 
+}
+.contacto span, .navegacion span, .tarjetas span {
+  font-weight: bold;
+  font-size: 18px;
+ display: block;
+}
+
+.contacto ul{
+  padding: 0;
+}
+
+.contacto li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0;
+ 
+}
+.contacto-img {
+  width: 25px;
+  height: 25px;
+  
+}
+
+.navegacion ul{
+  padding: 0;
+}
+.navegacion li {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.navegacion a {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+
+}
+.tarjetas ul{
+  padding: 0;
+  
+}
 
 .tarjetas li {
   list-style: none;
   display: inline;
+
+  margin-right: 10px;
+  
 }
+.img-tarjetas {
+  width: 40px;
+  height: 25px
+}
+
 
 .copy-footer{
   display: flex;
   justify-content: center;
+
 }
