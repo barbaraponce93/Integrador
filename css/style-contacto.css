@@ -1,7 +1,4 @@
-header {
-    background-color: #BBBBBB;
-    padding: 20px 0;
-}
+
 
 .caja {
     width: 940px;
@@ -9,28 +6,7 @@ header {
     margin: 0 auto;
 }
 
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
-align-items: center;
-justify-content: center;}
 
-
-nav li {
-    /*las listas biene en block por defecto, al cambiarlo a inline le digo que solo ocupe es espacio de su contenido*/
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-nav a {
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-    /*saca el subrayado por defecto de los link */
-}
 
 .productos {
     width: 940px;
