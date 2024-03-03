@@ -1,10 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 *{
   box-sizing: border-box;
-}
-
-html{
-  font-size: 1rem;
-  height: 100%;
 }
 
 body, header, main, footer {
@@ -13,20 +12,115 @@ body, header, main, footer {
   margin: 0.5rem;
   min-width: 600px;
 }
-
-main{
-  min-height: 400px;
-  overflow: auto;
-
+.caja {
+  width: 100%;
+  height: 200px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+html{
+  font-size: 1rem;
+  height: 100%;
+}
+/*cabecera*/
+.nav-header {
+  list-style: none;
+  /*para sacarle los items que pone la lista y quede mas facherito*/
+  display: flex;
+  margin: 10px;
+  justify-content: center;
 }
 
+.header-contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-buscador{
+ border: 2px solid yellowgreen;
+ display: inline-block;
+
+ width: 40%;
+ height:50px;
+ flex: 1;
+ margin: 10px;
+
+}
+#lupa{
+width: 100%;
+height: 100%;
+border-radius: 40px;
+font-size: 18px;
+}
+.header-logo{
+
+  border: 2px solid yellowgreen;
+  flex: 1;
+  margin: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items : center;
+
+ 
+ 
+}
+#logo-img {
+  max-width: 100%; /* Asegura que el logo no se extienda más allá de su contenedor */
+  height: auto; 
+  
+}
+
+.header-carrito{
+  border: 2px solid yellowgreen;
+  display: inline-block;
+  flex: 1;
+  margin: 10px;
+  text-align: center; 
+
+
+}
+.header-carrito img{
+  width: 40px;
+  height: 30px;
+  margin-right: 5px;/* Espacio entre el icono y el texto */
+ 
+}
+.header-carrito p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo para ajustarlo con el icono*/
+}
+
+
+nav li {
+
+  margin-right: 60px;
+  /* separar los elementos entre si, lo vemos*/
+}
+
+
+nav a {
+  text-decoration: none;
+  /*para sacarle la linea del link y quede mas facherito*/
+  color: black;
+}
 main>div {
   min-height: 380px;
   height: auto;
   border: 3px violet solid;
   margin: 0.5rem;
 
+}
 
+/*MAIN*/
+main{
+  min-height: 400px;
+  overflow: auto;
+
+}
+.carrusel {
+  width: 100%;
+  height: 300px;
+  border: 2px solid brown;
 }
 
 .section{
@@ -52,7 +146,7 @@ aside{
   width: auto;
   display: inline-block;
   margin: 0.5rem;
-  border: 3px black solid;
+ 
 }
 
 
@@ -73,11 +167,25 @@ aside{
   margin: 0 1rem 0;
 }
 
+
+
+
+
+
+.pie {
+  height: 200px;
+  background-color: rgb(146, 146, 69);
+
+}
 .header-menubar a{
   text-decoration: none;
   color: black;
 }
 
+.contenedor-footer {
+  position: relative;
+
+}
 .header-menubar a:hover {
   color: gold;
 }
@@ -92,21 +200,37 @@ aside{
     
 }
 
+
 .contacto li {
   list-style: none;
+  display: inline;
+
 }
+
+
 
 .navegacion li {
   list-style: none;
+
 }
+
 .navegacion a {
   text-decoration: none;
 }
 
+.img-tarjetas {
+  width: 40px;
+  height: 25px;
+
+}
 .contenedor-footer{
   display: flex;
 }
 
+.contacto-img {
+  width: 25px;
+  height: 25px;
+}
 
 .tarjetas{
   /* border: 3px black solid; */
@@ -119,6 +243,11 @@ aside{
   /* border: 3px black solid; */
   display: inline-block;
   flex: 1;
+}
+
+.contacto li {
+  display: flex;
+  flex-direction: row;
 
 }
 .navegacion{
@@ -137,5 +266,3 @@ aside{
   display: flex;
   justify-content: center;
 }
-
-
