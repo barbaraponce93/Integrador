@@ -1,0 +1,29 @@
+/*MAIN*/
+main>div {
+    /* min-height: 380px; */
+    /* height: auto; */
+    /* border: 3px violet solid; */
+    /* margin: 0.5rem; */
+  
+  }
+  
+  main{
+    min-height: 100px;
+    overflow: auto;
+  
+  }
+  
+  
+  .section{
+    min-height: 100px;
+    /* height: auto; */
+    /* border: 3px blue solid; */
+    margin: 0.5rem;
+    float: left;
+    width: 100%;
+  }
+
+  .section img{
+    height: 450px;
+    
+  }

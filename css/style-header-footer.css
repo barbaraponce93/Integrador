@@ -157,34 +157,7 @@ padding-right: 30px;
 }
 
 .header-menubar li a:hover{
-  color:whitesmoke;
-}
-
-
-
-/*MAIN*/
-main>div {
-  min-height: 380px;
-  height: auto;
-  border: 3px violet solid;
-  margin: 0.5rem;
-
-}
-
-main{
-  min-height: 400px;
-  overflow: auto;
-
-}
-
-
-.section{
-  min-height: 250px;
-  height: auto;
-  border: 3px blue solid;
-  margin: 0.5rem;
-  float: left;
-  width: 65%;
+  color:rgb(210, 210, 210);
 }
 
 
@@ -195,20 +168,9 @@ main{
 }
 
 img{
-  height:350px ;
-  width:700px ;
+  height:100% ;
+  width:100% ;
 }
-
-aside{
-  min-height: 250px;
-  height: auto;
-  border: 3px green solid;
-  margin: 0.5rem;
-  float: left;
-  width: 30%;
-
-}
-
 
 
 
