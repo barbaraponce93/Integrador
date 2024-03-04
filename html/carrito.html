@@ -1,82 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
+
 <body>
     <div class="contenedor">
-        <header>
-          <div id="header-dinamico"></div>
-        </header>
+
         <!-- la etiqueta ASIDE relacionado con el contenido que lo rodea, pero que se puede considerar independiente de ese contenido. barras laterales, anuncios, enlaces relacionados -->
         <aside>
-          <nav>
-            <ul>
-              <li><button>Todos los productos</button></li>
-    
-              <li><button class="boton-filtro"></button>Sabanas</li>
-              <li><button class="boton-filtro"></button>Acolchados</li>
-              <li><button class="boton-filtro"></button>Cubrecmas</li>
-              <li><button class="boton-filtro">Batas</button></li>
-              <li><button class="boton-filtro"></button>Cortinas</li>
-              <li><button>Almohadones</button></li>
-              <li><a class="boton-carrito" href="../html/carrito.html">Carrito <span class="num-carrito">0</span></a></li>
-            </ul>
-          </nav>
-    
-          <main>
-            <h2 class="titulo-principal">Todos los productos</h2>
-            <div class="contenedor-productos">
-              <div class="producto">
-                <img class="imagen-producto" src="../img/productos/cama/sabanas/2plazas.2.webp" alt="">
-                <div class="descripcion-producto">
-                  <h3 class="producto-titulo">Sabanas 2 plazas</h3>
-                  <p class="producto-precio">$32000</p>
-                  <button class="boton-producto">Agregar al carrito</button>
+            <nav>
+                <ul>
+                    <li><a class="boton-volver" href="index.html">
+                            &#9754; Seguir comprando</a></li>
+
+                    <li><a class="boton-carrito" href="../html/carrito.html"> &#128722; Carrito
+                            <span class="num-carrito"></span></a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <h2 class="titulo-principal">Todos los productos</h2>
+                <div class="contenedor-carrito">
+                    <p  class="carrito-vacio">😭 Tu carrito esta vacio 😭</p>
+
+                    <div class="productos-en-carrito">
+
+                        <div class="unidad-carrito">
+                            <img src="../img/productos/cama/sabanas/2plazas.2.webp" alt="">
+                            <div class="carrito-prod-titulo">
+                                <p>Título</p>
+                                <h3>Abrigo 01</h3>
+                            </div>
+                            <div class="carrito-prod-cantidad">
+                                <p>1</p>
+                            </div>
+                            <div class="carrito-prod-precio">
+                                <p>Precio</p>
+                                <p>$32000</p>
+                            </div>
+                            <div class="carrito-prod-cantidad">
+                                <p>1</p>
+                            </div>
+                            <div class="carrito-prod-subtotal">
+                                <p>Subtotal</p>
+                                <p>32000</p>
+                            </div>
+                                <button class="carrito-prod-eliminar">&#128465; Eliminar</button>
+                        </div>
+
+                        <div class="unidad-carrito">
+                            <img src="../img/productos/cama/sabanas/2plazas.3.webp" alt="">
+                            <div class="carrito-prod-titulo">
+                                <p>Título</p>
+                                <h3>Sabana 01</h3>
+                            </div>
+                            <div class="carrito-prod-cantidad">
+                                <p>1</p>
+                            </div>
+                            <div class="carrito-prod-precio">
+                                <p>Precio</p>
+                                <p>$5000</p>
+                            </div>
+                            <div class="carrito-prod-cantidad">
+                                <p>1</p>
+                            </div>
+                            <div class="carrito-prod-subtotal">
+                                <p>Subtotal</p>
+                                <p>5000</p>
+                            </div>
+                                <button class="carrito-prod-eliminar">&#128465; Eliminar</button>
+                        </div>
+
+                    </div>
+
+                    <canvas>
+                        <div class="carrito-acciones"></div>
+                        <div class="carrito-acciones-izquierda" >
+                            <button class="carrito-aciones-vaciar">Vaciar carrito</button>
+
+                        </div>
+                        <div class="carrito-acciones-derecha" >
+                            <div class="carrito-acciones-total">
+                                <p>Total</p>
+                                <p id="total">$3000</p>
+                            </div>
+                            <button  class="carrito-acciones-comprar">COMPRAR AHORA</button>
+                        </div>
+                    </canvas>
+
                 </div>
-                <div class="producto">
-                  <img class="imagen-producto" src="../img/productos/cama/sabanas/2plazas.3.webp" alt="">
-                  <div class="descripcion-producto">
-                    <h3 class="producto-titulo">Sabanas 2 plazas</h3>
-                    <p class="producto-precio">$32000</p>
-                    <button class="boton-producto">Agregar al carrito</button>
-                  </div>
-                  <div class="producto">
-                    <img class="imagen-producto" src="../img/productos/cama/sabanas/2plazas.4.webp" alt="">
-                    <div class="descripcion-producto">
-                      <h3 class="producto-titulo">Sabanas 2 plazas</h3>
-                      <p class="producto-precio">$32000</p>
-                      <button class="boton-producto">Agregar al carrito</button>
-                    </div>
-                    <div class="producto">
-                      <img class="imagen-producto" src="../img/productos/cama/sabanas/2plazas.5.webp" alt="">
-                      <div class="descripcion-producto">
-                        <h3 class="producto-titulo">Sabanas 2 plazas</h3>
-                        <p class="producto-precio">$32000</p>
-                        <button class="boton-producto">Agregar al carrito</button>
-                      </div>
-                    </div>
-                  </div>
-          </main>
-    
-    
-    
-    
+            </main>
+
+
+
+
         </aside>
-    
-    
-    
-    
-    
-    
-        <footer>
-          <div id="footer-dinamico"></div>
-        </footer>
-    
-    
-      </div>
-      <script src="../js/header-footer.js"></script>
+
+
+
+
+
+
+
+
+    </div>
+
 </body>
+
 </html>
