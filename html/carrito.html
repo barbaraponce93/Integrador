@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="../css/style-header-footer.css">
+    <link rel="stylesheet" href="../css/style-producto.css">
 </head>
 
 <body>
+
+    <header>
+        <div id="header-dinamico"></div>
+      </header>
+
+
     <div class="contenedor">
 
         <!-- la etiqueta ASIDE relacionado con el contenido que lo rodea, pero que se puede considerar independiente de ese contenido. barras laterales, anuncios, enlaces relacionados -->
         <aside>
             <nav>
-                <ul>
-                    <li><a class="boton-volver" href="index.html">
+                <ul class="lista-botones">
+                    <li><a class=" boton-menu boton-volver" href="index.html">
                             &#9754; Seguir comprando</a></li>
 
-                    <li><a class="boton-carrito" href="../html/carrito.html"> &#128722; Carrito
+                    <li><a class="boton-menu  boton-carrito" href="../html/carrito.html"> &#128722; Carrito
                             <span class="num-carrito"></span></a></li>
                 </ul>
             </nav>
+
+        </aside>
 
             <main>
                 <h2 class="titulo-principal">Todos los productos</h2>
@@ -31,7 +40,7 @@
                     <div class="productos-en-carrito">
 
                         <div class="unidad-carrito">
-                            <img src="../img/productos/cama/sabanas/2plazas.2.webp" alt="">
+                            <img class="carrito--producto-imagen" src="../img/productos/cama/sabanas/2plazas.2.webp" alt="">
                             <div class="carrito-prod-titulo">
                                 <p>Título</p>
                                 <h3>Abrigo 01</h3>
@@ -43,9 +52,6 @@
                                 <p>Precio</p>
                                 <p>$32000</p>
                             </div>
-                            <div class="carrito-prod-cantidad">
-                                <p>1</p>
-                            </div>
                             <div class="carrito-prod-subtotal">
                                 <p>Subtotal</p>
                                 <p>32000</p>
@@ -54,7 +60,7 @@
                         </div>
 
                         <div class="unidad-carrito">
-                            <img src="../img/productos/cama/sabanas/2plazas.3.webp" alt="">
+                            <img class="carrito--producto-imagen" src="../img/productos/cama/sabanas/2plazas.3.webp" alt="">
                             <div class="carrito-prod-titulo">
                                 <p>Título</p>
                                 <h3>Sabana 01</h3>
@@ -66,9 +72,6 @@
                                 <p>Precio</p>
                                 <p>$5000</p>
                             </div>
-                            <div class="carrito-prod-cantidad">
-                                <p>1</p>
-                            </div>
                             <div class="carrito-prod-subtotal">
                                 <p>Subtotal</p>
                                 <p>5000</p>
@@ -78,7 +81,7 @@
 
                     </div>
 
-                    <canvas>
+                    
                         <div class="carrito-acciones"></div>
                         <div class="carrito-acciones-izquierda" >
                             <button class="carrito-aciones-vaciar">Vaciar carrito</button>
@@ -91,7 +94,7 @@
                             </div>
                             <button  class="carrito-acciones-comprar">COMPRAR AHORA</button>
                         </div>
-                    </canvas>
+                    
 
                 </div>
             </main>
@@ -99,16 +102,24 @@
 
 
 
-        </aside>
+        </div>
+
+
+<footer>
+    <div id="footer-dinamico"></div>
+  </footer>
 
 
 
 
 
+  <script src="../js/header-footer.js"></script>
 
 
 
-    </div>
+
+
+   
 
 </body>
 

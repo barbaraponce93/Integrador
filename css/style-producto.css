@@ -143,6 +143,27 @@ font-size: 18px;
     color: rgb(2, 2, 2);
 
 }
+/*---------CARRITO----------*/
+
+.carrito-vacio{
+    color: black;
+    display: none;
+}
+
+.productos-en-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.unidad-carrito{
+    display: flex;
+    justify-content: space-between;
 
 
 
+}
+
+.carrito--producto-imagen{
+   width: 4rem;    
+}
