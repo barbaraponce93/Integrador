@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
 }
 
-body, header, main, footer {
+body, header,  footer {
   border: 3px red solid;
   min-height: 50px;
   margin: 0.5rem;
@@ -23,8 +23,6 @@ html{
   font-size: 1rem;
   height: 100%;
 }
-
-
 
 
 /*CABECERA*/
@@ -157,24 +155,12 @@ padding-right: 30px;
 }
 
 .header-menubar li a:hover{
-  color:rgb(210, 210, 210);
-}
-
-
-/* imagenes del carrusel */
-.section img{
-  max-width: 100%;
-  max-height: 100%;
-}
-
-img{
-  height:100% ;
-  width:100% ;
+  color:whitesmoke;
 }
 
 
 
-/*FOOTER*/
+/*-------FOOTER----------*/
 footer{
   background-image: url(../img/fondo2.jpg);
   padding: 20px;
