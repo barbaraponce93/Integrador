@@ -653,20 +653,25 @@ cargarProductos(productosArray);
 
 
 var botonesFiltro = document.querySelectorAll(".botones-filtro");
+var tituloPrincipal = document.querySelector("#tituloPrincipal");
 
 botonesFiltro.forEach(boton => {
     boton.addEventListener("click", (evento) => {
 
-        botonesFiltro.forEach(boton => boton.classList.remove("activo"));//le sacamos acttivo al boton todos los prod
-        evento.currentTarget.classList.add("activo");//se lo agrego al boton que se le hizo click, asi por ej toma los atributo del css
+        botonesFiltro.forEach(boton => boton.classList.remove("activo"));//le sacamos acttivoa todos los para desactivarlos visualmente.
+        evento.currentTarget.classList.add("activo");//se lo agrego al boton que se le hizo click, asi toma los atributo del css
 
-       if (evento.currentTarget.id != "todos-los-productos") {
-            //con el filter seteamos el array y creamos uno nuevo con los elementos que coincidan con su id (id de categoria del producto con el id del boton filtro(lista de categorias))
+       if (evento.currentTarget.id != "todos-los-productos") {//si el boton clickeado no es el de todo los prod que filtre por categoria
+       
+        //con el filter seteamos el array y creamos uno nuevo con los elementos que coincidan con su id (id de categoria del producto con el id del boton filtro(lista de categorias))
             var botonElegido = productosArray.filter(producto => producto.categoria.id === evento.currentTarget.id);
-            
-        cargarProductos(botonElegido);
+             cargarProductos(botonElegido);//nuevo array
+
+
+
+             
         }
-        else{
+        else{  // Si el botón clicado es "todos-los-productos", carga todo el array.
             cargarProductos(productosArray);
         }
 
