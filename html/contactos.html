@@ -20,7 +20,7 @@
       
        <hr>
     <main>
-        <form action="index.html" method="get" name="contacto" onsubmit="return validar()"> <!--br
+        <form action=# method="get" name="contacto" onsubmit="return validar()"> <!--br
             El action con el # es para que cuando toque el boton sutmit me devuelve a la misma pagina ,
         El atributo action es para que me devuelva la accion que realiza cuando se envia el formulario  . El atributo  method es get para que se me muestre la validacion de datos ,en la url el post es para que me muestre los datos incriptados 
         El atributo name es para que se pueda identificar el nombre del formulario desde el servidor  lo mismo con los label. El for del label es para vincular mi imput con el id 
@@ -38,7 +38,7 @@
         
         -->
             <label for="correo">Correo electronico</label>
-            <input type="email" name="email" id="correo" class="input-padron" placeholder="email@dominio.com">
+            <input type="text" name="email" id="correo" class="input-padron" placeholder="email@dominio.com">
     
             <label for="tel">Telefono</label>
             <input type="tel" name="telefono" id="tel" class="input-padron">
@@ -71,6 +71,7 @@
             <label for="" class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la
                 tienda?</label>
             <input type="submit" class="enviar" value="Enviar formulario">
+            <p id="respuesta"></p>
         </form>
 
 <hr>

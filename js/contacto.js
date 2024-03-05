@@ -9,57 +9,52 @@ function validar() {
     var nombrePatron = /^[A-Z][a-z]{1,20}\s[A-Z][a-z]{1,20}$/;
     var telefonoPatron = /^\d{10}$/;
     var mensajePatron = /^[ a-zA-ZñÑáéíóúÁÉÍÓÚ\.\,\?\¿]+$/;
-
-    let correoValido = true;
-    let nombreValido = true;
-    let telefonoValido = true;
-    let mensajeValido = true;
-    // Validar que los campos no estén vacíos
+    var respuesta;
 
     try {
 
         if (nombre === '' || correo === '' || telefono === '' || mensaje === '') {
-            alert('Por favor, complete todos los campos.');
-            return false;
+            respuesta = 'Por favor, complete todos los campos';
+
         }
     
         // Validar el formato del nombre
         if (!nombrePatron.test(nombre)) {
-            console.log("Probando nombre");
-            alert('Por favor, ingrese un nombre valido.');
-            nombreValido = false;
-            //return false;
+            respuesta = 'Por favor, ingrese un nombre valido.';
+
         }
     
         // Validar el formato del correo electrónico
         if (!emailPatron.test(correo)) {
-            console.log("Probando correo");
-            alert('Por favor, ingrese una dirección de correo electrónico válida.');
-            correoValido = false;
-            //return false;
+
+            respuesta = 'Por favor, ingrese una dirección de correo electrónico válida.';
+
         }
     
         // Validar el formato del telefono
         if (!telefonoPatron.test(telefono)) {
-            console.log("Probando telefono");
-            alert('Por favor, ingrese un telefono válido.');
-            telefonoValido = false;
-            //return false;
+
+            respuesta = 'Por favor, ingrese un telefono válido.';
+
         }
 
         if (!mensajePatron.test(mensaje)) {
-            console.log("Probando mensaje");
-            alert('Por favor, ingrese un mensaje válido.');
-            mensajeValido = false;
-            return false;
+            respuesta = 'Por favor, ingrese un mensaje válido.';
+ 
             
         }
-    
-        if (!correoValido || !nombreValido || !telefonoValido || !mensajeValido) {
+        
+
+
+        document.getElementById("respuesta").innerHTML = respuesta;
+
+        if (respuesta !== 'Tu consulta ha sido enviada con éxito, Gracias por contactarte') {
             return false;
+        } else {
+            alert ("Tu consulta ha sido enviada con éxito, Gracias por contactarte");
+            return true;
         }
-      alert ("Tu consulta ha sido enviada con éxito, Gracias por contactarte")  
-        return true;
+
         
     } catch (error) {
 
@@ -69,4 +64,6 @@ function validar() {
     }
     
 }
+
+
     
