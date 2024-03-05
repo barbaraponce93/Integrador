@@ -1,5 +1,7 @@
 /*MAIN*/
-
+body{
+  background-image: url(../img/fondo2.jpg);
+}
 .div-main {
   /* min-height: 800px; */
 
@@ -35,8 +37,8 @@ section img{
 }
 
 #img{
-  height:350px ;
-  width:700px ;
+  height:400px ;
+  width:100% ;
   
 }
 

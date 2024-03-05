@@ -7,7 +7,7 @@ body {
 }
 
 body, header,  footer {
-  border: 3px red solid;
+ /* border: 3px red solid;*/
   min-height: 50px;
   margin: 0.5rem;
   min-width: 600px;
@@ -116,7 +116,8 @@ padding-right: 30px;
   flex: 1;
   margin: 10px;
   text-align: center; 
-
+  
+  
 
 }
 .header-carrito img{
@@ -128,8 +129,13 @@ padding-right: 30px;
 .header-carrito p {
   margin: 0; /* Elimina el margen predeterminado del párrafo para ajustarlo con el icono*/
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
-
+.header-menubar a,
+.header-carrito a{
+  text-decoration: none;
+  color: black;
+}
 
 
 .header-menubar{
@@ -149,10 +155,7 @@ padding-right: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  
 }
-.header-menubar a{
-  text-decoration: none;
-  color: black;
-}
+
 
 .header-menubar li a:hover{
   color:whitesmoke;

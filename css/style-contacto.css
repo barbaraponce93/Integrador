@@ -1,4 +1,7 @@
+body{
+    background-image: url(../img/fondo2.jpg);
 
+}
 
 .caja {
     width: 940px;
@@ -132,27 +135,8 @@ form legend {
 
 }
 
-table{
-    margin: 40px 40px;
-}
-thead{
-    background: #555555;
-    color: white;
-    font-weight: bolder;
-}
-td ,th{
-    border: 1px solid #000000;
-    padding: 8px 15px ;
 
-}
 
-.caja li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
 
 
 
