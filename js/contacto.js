@@ -58,7 +58,7 @@ function validar() {
         if (!correoValido || !nombreValido || !telefonoValido || !mensajeValido) {
             return false;
         }
-        
+      alert ("Tu consulta ha sido enviada con éxito, Gracias por contactarte")  
         return true;
         
     } catch (error) {
