@@ -13,13 +13,13 @@
 
     <header>
         <div id="header-dinamico"></div>
-      </header>
+    </header>
 
 
-    <div class="contenedor">
+    <div class="contenedor-principal-carrito">
 
         <!-- la etiqueta ASIDE relacionado con el contenido que lo rodea, pero que se puede considerar independiente de ese contenido. barras laterales, anuncios, enlaces relacionados -->
-        <aside>
+     <!--   <aside>
             <nav>
                 <ul class="lista-botones">
                     <li><a class=" boton-menu boton-volver" href="index.html">
@@ -30,96 +30,90 @@
                 </ul>
             </nav>
 
-        </aside>
+        </aside>-->
 
-            <main>
-                <h2 class="titulo-principal">Todos los productos</h2>
-                <div class="contenedor-carrito">
-                    <p  class="carrito-vacio">😭 Tu carrito esta vacio 😭</p>
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio"> Tu carrito esta vacio 😢</p>
 
-                    <div class="productos-en-carrito">
+                <div class="productos-en-carrito  disabled">
 
-                        <div class="unidad-carrito">
-                            <img class="carrito--producto-imagen" src="../img/productos/cama/sabanas/2plazas.2.webp" alt="">
-                            <div class="carrito-prod-titulo">
-                                <p>Título</p>
-                                <h3>Abrigo 01</h3>
-                            </div>
-                            <div class="carrito-prod-cantidad">
-                                <p>1</p>
-                            </div>
-                            <div class="carrito-prod-precio">
-                                <p>Precio</p>
-                                <p>$32000</p>
-                            </div>
-                            <div class="carrito-prod-subtotal">
-                                <p>Subtotal</p>
-                                <p>32000</p>
-                            </div>
-                                <button class="carrito-prod-eliminar">&#128465; Eliminar</button>
+                    <div class="unidad-carrito">
+                        <img class="carrito--producto-imagen" src="../img/productos/cama/sabanas/2plazas.2.webp" alt="">
+                        <div class="carrito-prod-titulo">
+
+                            <h3>Sabana 01</h3>
                         </div>
-
-                        <div class="unidad-carrito">
-                            <img class="carrito--producto-imagen" src="../img/productos/cama/sabanas/2plazas.3.webp" alt="">
-                            <div class="carrito-prod-titulo">
-                                <p>Título</p>
-                                <h3>Sabana 01</h3>
-                            </div>
-                            <div class="carrito-prod-cantidad">
-                                <p>1</p>
-                            </div>
-                            <div class="carrito-prod-precio">
-                                <p>Precio</p>
-                                <p>$5000</p>
-                            </div>
-                            <div class="carrito-prod-subtotal">
-                                <p>Subtotal</p>
-                                <p>5000</p>
-                            </div>
-                                <button class="carrito-prod-eliminar">&#128465; Eliminar</button>
+                        <div class="carrito-prod-cantidad">
+                            <p class="carrito-subtitulo">cantidad</p>
+                            <p class="carrito-parrafo">1</p>
                         </div>
-
+                        <div class="carrito-prod-precio">
+                            <p class="carrito-subtitulo">Precio</p>
+                            <p class="carrito-parrafo">$32000</p>
+                        </div>
+                        <div class="carrito-prod-subtotal">
+                            <p class="carrito-subtitulo">Subtotal</p>
+                            <p class="carrito-parrafo">32000</p>
+                        </div>
+                        <button class="carrito-prod-eliminar"><img src="../img/basu.png" alt=""></button>
                     </div>
 
-                    
-                        <div class="carrito-acciones"></div>
-                        <div class="carrito-acciones-izquierda" >
-                            <button class="carrito-aciones-vaciar">Vaciar carrito</button>
-
+                    <div class="unidad-carrito">
+                        <img class="carrito--producto-imagen" src="../img/productos/cama/sabanas/2plazas.3.webp" alt="">
+                        <div class="carrito-prod-titulo">
+                            <h3>Sabana 02</h3>
                         </div>
-                        <div class="carrito-acciones-derecha" >
-                            <div class="carrito-acciones-total">
-                                <p>Total</p>
-                                <p id="total">$3000</p>
-                            </div>
-                            <button  class="carrito-acciones-comprar">COMPRAR AHORA</button>
+                        <div class="carrito-prod-cantidad">
+                            <p class="carrito-subtitulo">cantidad</p>
+                            <p>1</p>
                         </div>
-                    
+                        <div class="carrito-prod-precio">
+                            <p class="carrito-subtitulo">Precio</p>
+                            <p>$5000</p>
+                        </div>
+                        <div class="carrito-prod-subtotal">
+                            <p class="carrito-subtitulo">Subtotal</p>
+                            <p>5000</p>
+                        </div>
+                        <button class="carrito-prod-eliminar"><img src="../img/basu.png" alt=""></button>
+                    </div>
 
                 </div>
-            </main>
 
 
+                <div class="carrito-acciones  disabled">
+                <div class="carrito-acciones-izquierda">
+                    <button class="carrito-aciones-vaciar">Vaciar carrito</button>
 
+                </div>
+                <div class="carrito-acciones-derecha">
+                    <div class="carrito-acciones-total">
+                        <p>Total</p>
+                        <p id="total">$3000</p>
+                    </div>
+                    <button class="carrito-acciones-comprar">COMPRAR AHORA</button>
+                </div>
 
+            </div>
         </div>
-
-
-<footer>
-    <div id="footer-dinamico"></div>
-  </footer>
+            <p class="carrito-comprado disabled">Muchas Gracias por tu compra! 😊</p>
+        </main>
 
 
 
 
-
-  <script src="../js/header-footer.js"></script>
-
+    </div>
 
 
+    <footer>
+        <div id="footer-dinamico"></div>
+    </footer>
 
 
-   
+    <script src="../js/header-footer.js"></script>
+
 
 </body>
 

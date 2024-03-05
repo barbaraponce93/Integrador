@@ -22,6 +22,7 @@ a{
 /*Dispñay FLEX:Diseñado para trabajar en una dimensión (fila O columna), Útil para alinear elementos secundarios en una fila o columna, distribuir espacio y alinear en el eje principal o transversal*/
 
 .contenedor{
+   
     display: grid;
     grid-template-columns: 1fr 4fr; /*define el tamaño y la distribución de las columnas*/
      /*en este caso tenemos dos culumna la 1° toma una fraccion del espacio disponible y la 2| toma cuatro fracciones, es decir ocupara cuatro veces mas espacio que la 1°*/
@@ -99,6 +100,7 @@ border-bottom-left-radius: 10px;
 }
 
 .contenedor-productos{
+
     display: grid;
     grid-template-columns:repeat(4, 1fr) ;
     gap:1rem ;/*establece el espacio entre los elementos secundarios dentro de un contenedor.*/
@@ -145,9 +147,22 @@ font-size: 18px;
 }
 /*---------CARRITO----------*/
 
-.carrito-vacio{
+.contenedor-principal-carrito{
+
+}
+
+.contenedor-carrito{
+    
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+
+
+}
+.carrito-vacio, .carrito-comprado{
     color: black;
-    display: none;
+    
+ 
 }
 
 .productos-en-carrito{
@@ -159,11 +174,94 @@ font-size: 18px;
 .unidad-carrito{
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    background-color: rgb(236, 233, 233);
+    border-radius: 10px;
+   /* border: 1px solid green;*/
 
 
 }
 
 .carrito--producto-imagen{
-   width: 4rem;    
+   width: 4rem;
+   border-radius: 10px; 
+   
 }
+
+.carrito-prod-eliminar{
+    border-radius: 10px; 
+      border: none;
+   background-color: transparent; 
+   margin-right: 20px;
+   cursor: pointer;
+}
+.carrito-prod-eliminar img{
+   
+    border-radius: 10px; 
+    width: 30px;
+    height: 30px;
+       
+}
+.carrito-parrafo{
+    font-size: 16px;
+}
+.carrito-subtitulo{
+    font-size: 10px;
+}
+
+.carrito-prod-subtotal, .carrito-prod-precio, .carrito-prod-cantidad{
+    display: flex;
+    flex-direction: column;
+  align-items:center ;
+   
+}
+.carrito-acciones{
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-aciones-vaciar{
+    border: 0;
+    background-image: url(../img/fondo2.jpg);
+    padding: 15px;
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.carrito-acciones-comprar{
+    border: 2px solid rgb(78, 76, 76);
+   
+    background-image: url(../img/fondo2.jpg);
+    padding: 15px;
+    
+    color: black;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.carrito-acciones-derecha{
+    display: flex;
+
+}
+.carrito-acciones-total{
+display: flex;
+border: 2px solid  rgb(78, 76, 76);
+    background:whitesmoke;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: black;
+  
+    cursor: pointer;
+    gap: 10px;
+
+
+}
+
+.disabled{
+   display: none;/*oculta un elemento en la página*/
+}
+
