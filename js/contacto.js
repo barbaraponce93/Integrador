@@ -3,67 +3,89 @@ function validar() {
     var nombre = document.getElementById('nombreapellido').value;
     var correo = document.getElementById('correo').value;
     var telefono = document.getElementById('tel').value;
-    var mensaje = document.getElementById('mensaje').value;
-    
+    var mensaje = document.getElementById('mensaje').value
+   /*  var  texto = document.getElementById('texto').innerHTML=respuesta */
+    var respuesta
+
     var emailPatron = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var nombrePatron = /^[A-Z][a-z]{1,20}\s[A-Z][a-z]{1,20}$/;
     var telefonoPatron = /^\d{10}$/;
-    var mensajePatron = /^[ a-zA-ZñÑáéíóúÁÉÍÓÚ\.\,\?\¿]+$/;
-    var respuesta;
+    var mensajePatron = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\.\,\?\¿\s]+$/;
+
+    
+    
+    
+    
+
+
+    // Validar que los campos no estén vacíos
 
     try {
-
+           
         if (nombre === '' || correo === '' || telefono === '' || mensaje === '') {
-            respuesta = 'Por favor, complete todos los campos';
-
+            respuesta = 'Por favor, ingrese complete los campos.';
+            var  texto = document.getElementById('texto').innerHTML=respuesta
+            return false;
         }
-    
+        
         // Validar el formato del nombre
         if (!nombrePatron.test(nombre)) {
-            respuesta = 'Por favor, ingrese un nombre valido.';
+            console.log("Probando nombre");
 
+            respuesta = 'Por favor, ingrese complete los nombres.'; 
+            var  texto = document.getElementById('texto').innerHTML=respuesta
+
+            return false;
         }
     
         // Validar el formato del correo electrónico
         if (!emailPatron.test(correo)) {
+            console.log("Probando correo");
+            respuesta = 'Por favor, ingrese bien un correo.';  
+            var  texto = document.getElementById('texto').innerHTML=respuesta
 
-            respuesta = 'Por favor, ingrese una dirección de correo electrónico válida.';
-
+            return false;
         }
     
         // Validar el formato del telefono
         if (!telefonoPatron.test(telefono)) {
+            console.log("Probando telefono");
+            respuesta = 'Por favor, ingrese un telefono.';
+            var  texto = document.getElementById('texto').innerHTML=respuesta
 
-            respuesta = 'Por favor, ingrese un telefono válido.';
-
+            return false;
         }
 
         if (!mensajePatron.test(mensaje)) {
-            respuesta = 'Por favor, ingrese un mensaje válido.';
- 
+            console.log("Probando mensaje");
+            respuesta = 'Por favor, ingrese un mensaje.';
+            var  texto = document.getElementById('texto').innerHTML=respuesta
+    
+            return false;
             
         }
+    
+        alert("se envio correctamente en brevedad nos comunicaremos")
         
+        return true;
 
-
-        document.getElementById("respuesta").innerHTML = respuesta;
-
-        if (respuesta !== 'Tu consulta ha sido enviada con éxito, Gracias por contactarte') {
-            return false;
-        } else {
-            alert ("Tu consulta ha sido enviada con éxito, Gracias por contactarte");
-            return true;
-        }
-
+        
+        
         
     } catch (error) {
 
+        alert("ocuurio un error inesperado")
         
-        alert("Hubo un error, intente nuevamente.");
         return false;
-    }
+     
+
+        
     
-}
+
+
+
+    }
+    }
 
 
     
