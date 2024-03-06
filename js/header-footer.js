@@ -7,50 +7,97 @@ document.addEventListener('DOMContentLoaded', function () {//el evento DOMConten
 });
 
 function cargarHeaderFooter() {
-    
     const headerDinamico = document.getElementById('header-dinamico');
     //le pasamos el contenido HTML del encabezado 
-    const contenidoHeader = `          
-    <div class="header-contenedor">
-    <div class="header-atencionPublico">
-        <p class="parrafo">Hablanos de Lunes a viernes de 09:00 a 18:00hs</p>
-    </div>
 
-    <div class="header-logo">
-        <img src="../img/logo-transparente.png" alt="" id="logo-img">
-    </div>
 
-    <div class="header-buscador">
-        <input type="text" id="lupa">
-        <span><img src="../img/lupa.png" alt="" class="lupa-icono"></span>
-        <div id="resultado"></div>
-    </div>
+    let contenidoHeader = '';
+    if (document.title.startsWith('Inicio') || document.title.startsWith('Contacto')) {
+        console.log(document.title.length)
 
-    <div class="header-carrito">
-    <a href="carrito.html">  <img src="../img/carrito.png" alt="">
-    <p>Mi carrito</p>
-    <p class="num-carrito" id="numCarrito">0</p></a>
+        contenidoHeader = `          
+        <div class="header-contenedor">
+                <div class="header-atencionPublico">
+                     <p class="parrafo">Hablanos de Lunes a viernes de 09:00 a 18:00hs</p>
+                </div>
     
-      
+                <div class="header-logo">
+                    <img src="../img/logo-transparente.png" alt="" id="logo-img">
+                </div>
+    
+    
+                 <div class="header-carrito">
+                    <a href="carrito.html">  <img src="../img/carrito.png" alt="">
+                    <p>Mi carrito</p>
+                     <p class="num-carrito" id="numCarrito">0</p></a>
+                </div>
+        
+    
+        </div>
+    
+    <nav class="header-menubar">
+        <!-- <input type="text">-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+        `;
+
+    }
+    else {
+        const headerDinamico = document.getElementById('header-dinamico');
+        //le pasamos el contenido HTML del encabezado 
+         contenidoHeader =
+            `          
+        <div class="header-contenedor">
+        <div class="header-atencionPublico">
+            <p class="parrafo">Hablanos de Lunes a viernes de 09:00 a 18:00hs</p>
+        </div>
+    
+        <div class="header-logo">
+            <img src="../img/logo-transparente.png" alt="" id="logo-img">
+        </div>
+    
+    
+        <div class="header-carrito">
+        <a href="carrito.html">  <img src="../img/carrito.png" alt="">
+        <p>Mi carrito</p>
+        <p class="num-carrito" id="numCarrito">0</p></a>
+        
+          
+         </div>
+            <div class="header-buscador">
+            <input type="text" id="lupa">
+             <span><img src="../img/lupa.png" alt="" class="lupa-icono"></span>
+            <div id="resultado"></div>
+        </div>
+    
     </div>
+    
+    <nav class="header-menubar">
+        <!-- <input type="text">-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+        `;
 
-</div>
 
-<nav class="header-menubar">
-    <!-- <input type="text">-->
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
-    </ul>
-</nav>
-    `;
+
+
+
+    }
+   
     headerDinamico.innerHTML = contenidoHeader; //insertamos dentro de nuestro elemento dom ('header-dinamico') la cadena de texto que contiene el html
 
     // Cargar el pie de página
     const footerDinamico = document.getElementById('footer-dinamico');
     const contenidofooter = `
-    <div class="contenedor-footer">
+            < div class="contenedor-footer" >
 
     <div class="navegacion">
         <span>Navegacion</span>
@@ -95,7 +142,7 @@ function cargarHeaderFooter() {
 <div class="copy-footer">
     <p> &copy Copyright Grupo 4 - 2024</p>
 </div>
-    `;
+        `;
     footerDinamico.innerHTML = contenidofooter;
 }
 
@@ -116,3 +163,5 @@ setInterval(() => {
 setInterval(() => {
     cambiarTexto('Hablanos de Lunes a viernes de 09:00 a 18:00hs');
 }, 6000);
+
+
