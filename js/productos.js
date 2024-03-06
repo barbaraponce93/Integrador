@@ -615,15 +615,16 @@ var productosArray = [
 
 //Seleccionamos los elementos dom que vamos a usar
 
-var contenedorProductos = document.querySelector("#cont-productos");
+var contenedorProductos = document.getElementById("cont-productos");
 var botonesFiltro = document.querySelectorAll(".botones-filtro");
 var tituloPrincipal = document.querySelector("#tituloPrincipal");
 var botonesAgregar = document.querySelectorAll(".boton-agregar-producto");
 var numCarrito = document.querySelector(".num-carrito");
 
-
+console.log(contenedorProductos); // lo hizo lucas para ver que tiene
+console.log(typeof contenedorProductos) // lo hizo lucas para ver que tiene
 function cargarProductos(productoFiltrado) {
-    contenedorProductos.innerHTML = ""; // limpiamos para que no se agreguen prod cada vez que clickeamos un boton de filtro
+    contenedorProductos.innerHTML = ""; //limpiamos para que no se agreguen prod cada vez que clickeamos un boton de filtro
     productoFiltrado.forEach(producto => { //recorremos el array y por cada elemento se cra un div y luego el contenido del mismo
 
         var div = document.createElement("div");
@@ -772,12 +773,17 @@ function buscarItem() {
     search.addEventListener("input", e => {
         limpiarhtml()
         const inputText = e.target.value.toUpperCase().trim();
+        if(inputText.length > 0){
+            var botonElegido = productosArray.filter(producto => producto.categoria.nombre.toLocaleUpperCase().startsWith(inputText));
+            cargarProductos(botonElegido);//nuevo array
+
         const mostrarFiltrado = productosArraySinRepetir.filter(item =>  item.toLocaleUpperCase().startsWith(inputText));
         if (mostrarFiltrado.length) {
             mostrarItem(mostrarFiltrado)
         } else {
             noResultado();
         }
+    }
     });
 }
 
@@ -785,8 +791,8 @@ function buscarItem() {
 
 function limpiarhtml() {
     var resultado = document.getElementById('resultado');
-    while (resultado.firstChild) {
-        resultado.removeChild(resultado.firstChild);
+    while (resultado.lastChild) {
+        resultado.removeChild(resultado.lastChild);
     }
 }
 
