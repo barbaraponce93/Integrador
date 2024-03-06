@@ -1,87 +1,11 @@
 body{
     background-image: url(../img/fondo2.jpg);
-
-}
-
-.caja {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 
-.productos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
-}
 
-.productos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    /* para que no sebrepase el ancho*/
-    border: 2px solid #000000;
-    border-radius: 10px;
-
-}
-
-.productos h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.descripcion {
-    font-size: 18px;
-
-}
-
-.precio {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-nav a:hover {
-    /*captura el comportamiento del movimiento del mouse de nuestro usuario,*/
-    color: #c78c19;
-    text-decoration: underline;
-
-}
-
-.productos li:hover {
-    border-color: #c78c19;
-
-}
-
-.productos li:hover h2 {
-    font-size: 33px;
-
-}
-
-.productos li:active {
-    /*active, cuando un elemento está siendo activado por el usuario.*/
-    border-color: #088c19;
-
-}
-
-footer {
-    text-align: center;
-    background: url(img/bg.jpg);
-    padding: 40px;
-}
-
-#copy {
-    color: #ffffff;
-    font-size: 12px;
-    margin: 20px;
-}
 
 main {
     width: 940px;
@@ -92,12 +16,18 @@ main {
 form {
     margin: 40px 0;
 }
+form span {
+    font-size: 12px;
 
+}
 form label,
 form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
+}
+ #texto{
+    font-size: 30px;
 }
 
 
