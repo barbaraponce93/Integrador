@@ -28,7 +28,7 @@ function cargarHeaderFooter() {
     <div class="header-carrito">
     <a href="carrito.html">  <img src="../img/carrito.png" alt="">
     <p>Mi carrito</p>
-    <p class="num-carrito">0</p></a>
+    <p class="num-carrito" id="numCarrito">0</p></a>
     
       
     </div>

@@ -273,17 +273,7 @@ var productosArray = [
         },
 
     },
-    {
-        id: "acolchado04",/*este el id del prod */
-        titulo: "Acolchado 1 plazas- Estampado Dinosaurios",
-        imagen: "../img/productos/cama/acolchado/acolchado4.webp",
-        precio: 40000,
-        categoria: {
-            nombre: "Acolchados",
-            id: "acolchado"/*este el id de la categoria*/
-        },
-
-    },
+    
     {
         id: "acolchado05",/*este el id del prod */
         titulo: "Acolchado 1 plazas- Minnie",
@@ -628,7 +618,8 @@ var productosArray = [
 var contenedorProductos = document.querySelector("#cont-productos");
 var botonesFiltro = document.querySelectorAll(".botones-filtro");
 var tituloPrincipal = document.querySelector("#tituloPrincipal");
-var  botonesAgregar=document.querySelectorAll(".boton-agregar-producto");
+var botonesAgregar = document.querySelectorAll(".boton-agregar-producto");
+var numCarrito = document.querySelector(".num-carrito");
 
 
 function cargarProductos(productoFiltrado) {
@@ -658,29 +649,27 @@ function cargarProductos(productoFiltrado) {
 cargarProductos(productosArray);
 
 
-
-
 botonesFiltro.forEach(boton => {
     boton.addEventListener("click", (evento) => {
-       
+
         botonesFiltro.forEach(boton => boton.classList.remove("activo"));//le sacamos acttivoa todos los para desactivarlos visualmente.
         evento.currentTarget.classList.add("activo");//se lo agrego al boton que se le hizo click, asi toma los atributo del css
+        //con classList manipulamos la clase del elemento(quitamos y agregamos la clase activo )
+        if (evento.currentTarget.id != "todos-los-productos") {//si el boton clickeado no es el de todo los prod que filtre por categoria
 
-       if (evento.currentTarget.id != "todos-los-productos") {//si el boton clickeado no es el de todo los prod que filtre por categoria
-     
-var tituloCategoria= productosArray.find(producto => producto.categoria.id=== evento.currentTarget.id)
-       tituloPrincipal.innerText=tituloCategoria.categoria.nombre;
+            var tituloCategoria = productosArray.find(producto => producto.categoria.id === evento.currentTarget.id)
+            tituloPrincipal.innerText = tituloCategoria.categoria.nombre;
 
-        //con el filter seteamos el array y creamos uno nuevo con los elementos que coincidan con su id (id de categoria del producto con el id del boton filtro(lista de categorias))
+            //con el filter seteamos el array y creamos uno nuevo con los elementos que coincidan con su id (id de categoria del producto con el id del boton filtro(lista de categorias))
             var botonElegido = productosArray.filter(producto => producto.categoria.id === evento.currentTarget.id);
-             cargarProductos(botonElegido);//nuevo array
+            cargarProductos(botonElegido);//nuevo array
 
 
 
-             
+
         }
-        else{  // Si el botón clicado es "todos-los-productos", carga todo el array.
-            tituloPrincipal.innerText="Todos los Productos"
+        else {  // Si el botón clicado es "todos-los-productos", carga todo el array.
+            tituloPrincipal.innerText = "Todos los Productos"
             cargarProductos(productosArray);
         }
 
@@ -692,18 +681,42 @@ var tituloCategoria= productosArray.find(producto => producto.categoria.id=== ev
 
 
 
-function actualizarBotonesAgregar(){// cada vez que se carguen productos nuevos(por el filtro) vuelva a buscar en el html todos los bot agregar que existan para esa categoria
-    botonesAgregar=document.querySelectorAll(".boton-agregar-producto");//esta funcion se llama cada vez que cargamos los prod//asegura que los botones Agregar al carrito estén actualizados y listos para su interacción después de cargar nuevos productos
+function actualizarBotonesAgregar() {// cada vez que se carguen productos nuevos(por el filtro) vuelva a buscar en el html todos los bot agregar que existan para esa categoria
+    botonesAgregar = document.querySelectorAll(".boton-agregar-producto");//esta funcion se llama cada vez que cargamos los prod//asegura que los botones Agregar al carrito estén actualizados y listos para su interacción después de cargar nuevos productos
 
-    botonesAgregar.forEach(boton=> {//
+    botonesAgregar.forEach(boton => {//
         boton.addEventListener("click", agregarAlCarrito)//este listener va a llamar a la funcion
     })
 }
 
 
-var productosEncarrito=[];
+var productosEncarrito = [];
 
-function agregarAlCarrito(){
+function agregarAlCarrito(evento) {//el currentTarget es una prop para referirse al objeto al cual el evento está actualmente manejando
+    var idBoton = evento.currentTarget.id
 
+    var prodAgregado = productosArray.find(producto => producto.id === idBoton)//creamoa un producto agregado
+
+    if (productosEncarrito.some(producto => producto.id === idBoton)) {
+        var indiceProdAgregado = productosEncarrito.findIndex(producto => producto.id === idBoton);
+        productosEncarrito[indiceProdAgregado].cantidad++;
+
+
+    }
+    else {
+        prodAgregado.cantidad = 1; // estariamos agregando la prop cantidad al array, y si entra al array es porque hay un prod del mismo tipo agregado
+        productosEncarrito.push(prodAgregado);
+
+    }
+
+    actualizarNumCarrito();
+    //console.log(productosEncarrito)
+   
+}
+
+function actualizarNumCarrito() {
+    var nuevoNumero = productosEncarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numCarrito.innerText = nuevoNumero;
+     console.log(numCarrito)
 
 }
