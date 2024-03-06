@@ -8,7 +8,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/2plazas1.webp",
         precio: 35000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -19,7 +19,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/2plazas2.webp",
         precio: 35000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -30,7 +30,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/2plazas3.webp",
         precio: 38000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -41,7 +41,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/2plazas4.webp",
         precio: 38000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -52,7 +52,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/2plazas5.webp",
         precio: 35000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -63,7 +63,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/sabana6.webp",
         precio: 30000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -75,7 +75,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/sabana7.webp",
         precio: 40000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -86,7 +86,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/sabana8.webp",
         precio: 45000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -97,7 +97,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/sabana9.webp",
         precio: 45000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -108,7 +108,7 @@ var productosArray = [
         imagen: "../img/productos/cama/sabanas/sabana10.webp",
         precio: 35000,
         categoria: {
-            nombre: "sabanas",
+            nombre: "Sabanas",
             id: "sab"/*este el id de la categoria*/
         },
 
@@ -122,7 +122,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama1.webp",
         precio: 38000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -133,7 +133,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama2.webp",
         precio: 38000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -144,7 +144,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama3.webp",
         precio: 38000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -155,7 +155,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama4.webp",
         precio: 38000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -166,7 +166,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama5.webp",
         precio: 42000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -177,7 +177,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama6.webp",
         precio: 38000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -188,7 +188,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama7.webp",
         precio: 38000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -199,7 +199,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama8.webp",
         precio: 42000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -210,7 +210,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama9.webp",
         precio: 45000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -221,7 +221,7 @@ var productosArray = [
         imagen: "../img/productos/cama/cubrecama/cubrecama10.webp",
         precio: 42000,
         categoria: {
-            nombre: "cubrecama",
+            nombre: "Cubrecamas",
             id: "cubre"/*este el id de la categoria*/
         },
 
@@ -235,7 +235,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado1.webp",
         precio: 50000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -246,7 +246,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado2.webp",
         precio: 58000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -257,7 +257,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado3.webp",
         precio: 48000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -268,7 +268,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado4.webp",
         precio: 40000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -279,7 +279,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado4.webp",
         precio: 40000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -290,7 +290,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado5.webp",
         precio: 42000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -301,7 +301,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado6.webp",
         precio: 42000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -312,7 +312,7 @@ var productosArray = [
         imagen: "../img/productos/cama/acolchado/acolchado7.webp",
         precio: 40000,
         categoria: {
-            nombre: "acolchados",
+            nombre: "Acolchados",
             id: "acolchado"/*este el id de la categoria*/
         },
 
@@ -326,7 +326,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set1.webp",
         precio: 37500,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -337,7 +337,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set2.webp",
         precio: 37500,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -348,7 +348,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set3.webp",
         precio: 35000,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -359,7 +359,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set4.webp",
         precio: 49000,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -370,7 +370,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set5.webp",
         precio: 37500,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -381,7 +381,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set6.webp",
         precio: 32000,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -393,7 +393,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set7.webp",
         precio: 22500,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -404,7 +404,7 @@ var productosArray = [
         imagen: "../img/productos/toallas/set8.webp",
         precio: 20000,
         categoria: {
-            nombre: "toallon",
+            nombre: "Toallones",
             id: "set"/*este el id de la categoria*/
         },
 
@@ -419,7 +419,7 @@ var productosArray = [
         imagen: "../img/productos/batas/bata1.webp",
         precio: 30000,
         categoria: {
-            nombre: "batas",
+            nombre: "Batas",
             id: "bata"/*este el id de la categoria*/
         },
 
@@ -430,7 +430,7 @@ var productosArray = [
         imagen: "../img/productos/batas/bata2.webp",
         precio: 28000,
         categoria: {
-            nombre: "batas",
+            nombre: "Batas",
             id: "bata"/*este el id de la categoria*/
         },
 
@@ -442,7 +442,7 @@ var productosArray = [
         imagen: "../img/productos/batas/bata3.webp",
         precio: 28000,
         categoria: {
-            nombre: "batas",
+            nombre: "Batas",
             id: "bata"/*este el id de la categoria*/
         },
 
@@ -453,7 +453,7 @@ var productosArray = [
         imagen: "../img/productos/batas/bata5.webp",
         precio: 20000,
         categoria: {
-            nombre: "batas",
+            nombre: "Batas",
             id: "bata"/*este el id de la categoria*/
         },
 
@@ -467,7 +467,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortina1.webp",
         precio: 30000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -478,7 +478,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortina2.webp",
         precio: 30000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -489,7 +489,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortina3.webp",
         precio: 33000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -500,7 +500,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortina4.webp",
         precio: 33000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -511,7 +511,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortina5.webp",
         precio: 27000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -522,7 +522,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortinabaño2.webp",
         precio: 24000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -533,7 +533,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortinabaño3.webp",
         precio: 20000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -544,7 +544,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortinabaño4.webp",
         precio: 20000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -555,7 +555,7 @@ var productosArray = [
         imagen: "../img/productos/cortinas/cortinabaño1.webp",
         precio: 20000,
         categoria: {
-            nombre: "cortinas",
+            nombre: "Cortinas",
             id: "corti"/*este el id de la categoria*/
         },
 
@@ -569,7 +569,7 @@ var productosArray = [
         imagen: "../img/productos/almohadones/almohadon1.webp",
         precio: 13000,
         categoria: {
-            nombre: "almohadones",
+            nombre: "Almohadones",
             id: "almohadon"/*este el id de la categoria*/
         },
 
@@ -580,7 +580,7 @@ var productosArray = [
         imagen: "../img/productos/almohadones/almohadon2.webp",
         precio: 12000,
         categoria: {
-            nombre: "almohadones",
+            nombre: "Almohadones",
             id: "almohadon"/*este el id de la categoria*/
         },
 
@@ -591,7 +591,7 @@ var productosArray = [
         imagen: "../img/productos/almohadones/almohadon3.webp",
         precio: 12000,
         categoria: {
-            nombre: "almohadones",
+            nombre: "Almohadones",
             id: "almohadon"/*este el id de la categoria*/
         },
 
@@ -602,7 +602,7 @@ var productosArray = [
         imagen: "../img/productos/almohadones/almohadon4.webp",
         precio: 12000,
         categoria: {
-            nombre: "almohadones",
+            nombre: "Almohadones",
             id: "almohadon"/*este el id de la categoria*/
         },
 
@@ -613,7 +613,7 @@ var productosArray = [
         imagen: "../img/productos/almohadones/almohadon5.webp",
         precio: 14000,
         categoria: {
-            nombre: "almohadones",
+            nombre: "Almohadones",
             id: "almohadon"/*este el id de la categoria*/
         },
 
@@ -626,6 +626,9 @@ var productosArray = [
 //Seleccionamos los elementos dom que vamos a usar
 
 var contenedorProductos = document.querySelector("#cont-productos");
+var botonesFiltro = document.querySelectorAll(".botones-filtro");
+var tituloPrincipal = document.querySelector("#tituloPrincipal");
+var  botonesAgregar=document.querySelectorAll(".boton-agregar-producto");
 
 
 function cargarProductos(productoFiltrado) {
@@ -641,28 +644,33 @@ function cargarProductos(productoFiltrado) {
             <div class="descripcion-producto">
                 <h3 class="producto-titulo">${producto.titulo}</h3> 
                 <p class="producto-precio">$${producto.precio}</p>
-                <button class="boton-agregar-producto" ${producto.id}">AGREGAR AL CARRITO</button>
+                <button class="boton-agregar-producto" id="${producto.id}">AGREGAR AL CARRITO</button>
             </div>
         `;
         contenedorProductos.append(div);
 
     });
-
+    actualizarBotonesAgregar();
+    console.log(agregarAlCarrito)
 }
+
+
 cargarProductos(productosArray);
 
 
-var botonesFiltro = document.querySelectorAll(".botones-filtro");
-var tituloPrincipal = document.querySelector("#tituloPrincipal");
+
 
 botonesFiltro.forEach(boton => {
     boton.addEventListener("click", (evento) => {
-
+       
         botonesFiltro.forEach(boton => boton.classList.remove("activo"));//le sacamos acttivoa todos los para desactivarlos visualmente.
         evento.currentTarget.classList.add("activo");//se lo agrego al boton que se le hizo click, asi toma los atributo del css
 
        if (evento.currentTarget.id != "todos-los-productos") {//si el boton clickeado no es el de todo los prod que filtre por categoria
-       
+     
+var tituloCategoria= productosArray.find(producto => producto.categoria.id=== evento.currentTarget.id)
+       tituloPrincipal.innerText=tituloCategoria.categoria.nombre;
+
         //con el filter seteamos el array y creamos uno nuevo con los elementos que coincidan con su id (id de categoria del producto con el id del boton filtro(lista de categorias))
             var botonElegido = productosArray.filter(producto => producto.categoria.id === evento.currentTarget.id);
              cargarProductos(botonElegido);//nuevo array
@@ -672,6 +680,7 @@ botonesFiltro.forEach(boton => {
              
         }
         else{  // Si el botón clicado es "todos-los-productos", carga todo el array.
+            tituloPrincipal.innerText="Todos los Productos"
             cargarProductos(productosArray);
         }
 
@@ -680,3 +689,21 @@ botonesFiltro.forEach(boton => {
 
 
 })
+
+
+
+function actualizarBotonesAgregar(){// cada vez que se carguen productos nuevos(por el filtro) vuelva a buscar en el html todos los bot agregar que existan para esa categoria
+    botonesAgregar=document.querySelectorAll(".boton-agregar-producto");//esta funcion se llama cada vez que cargamos los prod//asegura que los botones Agregar al carrito estén actualizados y listos para su interacción después de cargar nuevos productos
+
+    botonesAgregar.forEach(boton=> {//
+        boton.addEventListener("click", agregarAlCarrito)//este listener va a llamar a la funcion
+    })
+}
+
+
+var productosEncarrito=[];
+
+function agregarAlCarrito(){
+
+
+}
