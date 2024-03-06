@@ -720,3 +720,96 @@ function actualizarNumCarrito() {
      console.log(numCarrito)
 
 }
+
+
+
+
+
+////////////////
+
+const categoriasSet = new Set();
+// Recorremos el array de productos y agregamos cada nombre de categoría al conjunto
+productosArray.forEach(producto => {
+    categoriasSet.add(producto.categoria.nombre);
+});
+// Convertimos el conjunto en un array
+const productosArraySinRepetir = Array.from(categoriasSet);
+// console.log(categoriasArray);
+
+
+
+
+
+//obtenemos el dato que estamos buscando
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+        mostrarItem(productosArraySinRepetir);
+        buscarItem()
+        limpiarhtml()
+
+
+        if(document.getElementById('lupa')==""){ // no puedo limpiar la busqueda
+            limpiarhtml()
+        }
+    
+
+});
+function mostrarItem(productosArraySinRepetir) {
+    var resultado = document.getElementById('resultado');
+    productosArraySinRepetir.forEach(item => {
+        const elemento = document.createElement("p");
+        elemento.innerHTML = `${item}`;
+        elemento.id="idsearch"
+        resultado.appendChild(elemento);
+    });
+
+}
+
+function buscarItem() {
+    var search = document.getElementById("lupa");
+    search.addEventListener("input", e => {
+        limpiarhtml()
+        const inputText = e.target.value.toUpperCase().trim();
+        const mostrarFiltrado = productosArraySinRepetir.filter(item =>  item.toLocaleUpperCase().startsWith(inputText));
+        if (mostrarFiltrado.length) {
+            mostrarItem(mostrarFiltrado)
+        } else {
+            noResultado();
+        }
+    });
+}
+
+
+
+function limpiarhtml() {
+    var resultado = document.getElementById('resultado');
+    while (resultado.firstChild) {
+        resultado.removeChild(resultado.firstChild);
+    }
+}
+
+
+function noResultado() {
+    var resultado = document.getElementById('resultado');
+    const noResultado = document.createElement('resultado')
+    noResultado.textContent = "No hay resultados";
+    resultado.appendChild(noResultado);
+
+}
+
+const input = document.getElementById('lupa'); // no se limpia cuando retiro el cursor de la buqueda
+// input.addEventListener('blur', limpiarhtml())
+    
+
+
+var idsearch = document.getElementById('idsearch');
+var lupaicono = document.getElementsByClassName('lupa-icono');
+var search = document.getElementById("lupa");
+console.log('entro');
+// lupaicono.addEventListener('click', () => {
+//     alert('entro');
+// });
+
+

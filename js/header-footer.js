@@ -23,6 +23,7 @@ function cargarHeaderFooter() {
     <div class="header-buscador">
         <input type="text" id="lupa">
         <span><img src="../img/lupa.png" alt="" class="lupa-icono"></span>
+        <div id="resultado"></div>
     </div>
 
     <div class="header-carrito">
