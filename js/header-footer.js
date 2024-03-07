@@ -97,7 +97,7 @@ function cargarHeaderFooter() {
     // Cargar el pie de página
     const footerDinamico = document.getElementById('footer-dinamico');
     const contenidofooter = `
-            < div class="contenedor-footer" >
+    <div class="contenedor-footer">
 
     <div class="navegacion">
         <span>Navegacion</span>
@@ -142,7 +142,7 @@ function cargarHeaderFooter() {
 <div class="copy-footer">
     <p> &copy Copyright Grupo 4 - 2024</p>
 </div>
-        `;
+    `;
     footerDinamico.innerHTML = contenidofooter;
 }
 
