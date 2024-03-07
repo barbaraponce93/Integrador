@@ -615,15 +615,16 @@ var productosArray = [
 
 //Seleccionamos los elementos dom que vamos a usar
 
-var contenedorProductos = document.querySelector("#cont-productos");
+var contenedorProductos = document.getElementById("cont-productos");
 var botonesFiltro = document.querySelectorAll(".botones-filtro");
 var tituloPrincipal = document.querySelector("#tituloPrincipal");
 var botonesAgregar = document.querySelectorAll(".boton-agregar-producto");
 var numCarrito = document.querySelector(".num-carrito");
 
-
+console.log(contenedorProductos); // lo hizo lucas para ver que tiene
+console.log(typeof contenedorProductos) // lo hizo lucas para ver que tiene
 function cargarProductos(productoFiltrado) {
-    contenedorProductos.innerHTML = ""; // limpiamos para que no se agreguen prod cada vez que clickeamos un boton de filtro
+    contenedorProductos.innerHTML = ""; //limpiamos para que no se agreguen prod cada vez que clickeamos un boton de filtro
     productoFiltrado.forEach(producto => { //recorremos el array y por cada elemento se cra un div y luego el contenido del mismo
 
         var div = document.createElement("div");
@@ -720,3 +721,101 @@ function actualizarNumCarrito() {
      console.log(numCarrito)
 
 }
+
+
+
+
+
+////////////////
+
+const categoriasSet = new Set();
+// Recorremos el array de productos y agregamos cada nombre de categoría al conjunto
+productosArray.forEach(producto => {
+    categoriasSet.add(producto.categoria.nombre);
+});
+// Convertimos el conjunto en un array
+const productosArraySinRepetir = Array.from(categoriasSet);
+// console.log(categoriasArray);
+
+
+
+
+
+//obtenemos el dato que estamos buscando
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+        mostrarItem(productosArraySinRepetir);
+        buscarItem()
+        limpiarhtml()
+
+
+        if(document.getElementById('lupa')==""){ // no puedo limpiar la busqueda
+            limpiarhtml()
+        }
+    
+
+});
+function mostrarItem(productosArraySinRepetir) {
+    var resultado = document.getElementById('resultado');
+    productosArraySinRepetir.forEach(item => {
+        const elemento = document.createElement("p");
+        elemento.innerHTML = `${item}`;
+        elemento.id="idsearch"
+        resultado.appendChild(elemento);
+    });
+
+}
+
+function buscarItem() {
+    var search = document.getElementById("lupa");
+    search.addEventListener("input", e => {
+        limpiarhtml()
+        const inputText = e.target.value.toUpperCase().trim();
+        if(inputText.length > 0){
+            var botonElegido = productosArray.filter(producto => producto.categoria.nombre.toLocaleUpperCase().startsWith(inputText));
+            cargarProductos(botonElegido);//nuevo array
+
+        const mostrarFiltrado = productosArraySinRepetir.filter(item =>  item.toLocaleUpperCase().startsWith(inputText));
+        if (mostrarFiltrado.length) {
+            mostrarItem(mostrarFiltrado)
+        } else {
+            noResultado();
+        }
+    }
+    });
+}
+
+
+
+function limpiarhtml() {
+    var resultado = document.getElementById('resultado');
+    while (resultado.lastChild) {
+        resultado.removeChild(resultado.lastChild);
+    }
+}
+
+
+function noResultado() {
+    var resultado = document.getElementById('resultado');
+    const noResultado = document.createElement('resultado')
+    noResultado.textContent = "No hay resultados";
+    resultado.appendChild(noResultado);
+
+}
+
+const input = document.getElementById('lupa'); // no se limpia cuando retiro el cursor de la buqueda
+// input.addEventListener('blur', limpiarhtml())
+    
+
+
+var idsearch = document.getElementById('idsearch');
+var lupaicono = document.getElementsByClassName('lupa-icono');
+var search = document.getElementById("lupa");
+console.log('entro');
+// lupaicono.addEventListener('click', () => {
+//     alert('entro');
+// });
+
+

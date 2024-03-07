@@ -14,30 +14,18 @@
 </head>
 
 <body>
+
     <header >
         <div id="header-dinamico"></div>
        </header>
       
        <hr>
     <main>
-        <form action=# method="get" name="contacto" onsubmit="return validar()"> <!--br
-            El action con el # es para que cuando toque el boton sutmit me devuelve a la misma pagina ,
-        El atributo action es para que me devuelva la accion que realiza cuando se envia el formulario  . El atributo  method es get para que se me muestre la validacion de datos ,en la url el post es para que me muestre los datos incriptados 
-        El atributo name es para que se pueda identificar el nombre del formulario desde el servidor  lo mismo con los label. El for del label es para vincular mi imput con el id 
-        cuando el usuario va apretar el boton summit antes de ir por action primero va a pasar por onclick que me va a retornar la funcion validar form
-        este evento es un boleano devuelve true o false 
-        
-        
-        
-        -->
-            <label for="nombreapellido">Nombre y Apellido</label>
+        <form action="index.html" method="get" name="contacto" onsubmit="return validar()">
+            <label for="nombreapellido">Nombre y Apellido <span>(ambos con mayuscula )</span>  </label>
             <input type="text" name="nombre" id="nombreapellido" class="input-padron">
-            <!-- size :es para darle el tamaño de 10 caracteres a la caja. maxlength : es para que me permita maximo 10 caracteres 
-        si le pongo size solo va a tener el tamaño de 10 caracteres pero se le va a poder seguir agregando caracteres son el maxlength no 
-        
-        
-        -->
-            <label for="correo">Correo electronico</label>
+            
+            <label for="correo">Correo electronico  </label>
             <input type="text" name="email" id="correo" class="input-padron" placeholder="email@dominio.com">
     
             <label for="tel">Telefono</label>
@@ -48,30 +36,26 @@
     
             <fieldset> <!--este elemento se usa cuadno todos los elementos que estan aca estan relacionados  -->
                 <legend>¿Cómo le gustaria que nos contactemos?</legend><!--fieldset no usa <p>-->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
     
-                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
     
-    
-                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">
-                    Teléfono</label>
-    
-                <label for="radio-whatsapp"> <input type="radio" name="contacto" value="radio-whatsapp" id="radio-whatsapp"
-                        checked>Whatsapp</label>
-    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">
+                        Teléfono</label>
+        
+                    <label for="radio-whatsapp"> <input type="radio" name="contacto" value="radio-whatsapp" id="radio-whatsapp"
+                            checked>Whatsapp</label>
+        
             </fieldset>
-            <!-- <fieldset>
-                <legend>¿En que horario le gustaria ser atendido?</legend>
-                <select name="horario" id="">
-                    <option value="Mañana">Mañana</option>
-                    <option value="Tarde">Tarde</option>
-                    <option value="Noche">Noche</option>
-                </select>
-            </fieldset> -->
+            
+                
+            
     
             <label for="" class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la
                 tienda?</label>
+                <p id="texto"></p>
             <input type="submit" class="enviar" value="Enviar formulario">
-            <p id="respuesta"></p>
+            
+                
         </form>
 
 <hr>
@@ -84,7 +68,7 @@
       </footer>
        
         <script src="../js/header-footer.js"></script>
-
+        <script src="../js/contacto.js"></script>
 
 </body>
 
