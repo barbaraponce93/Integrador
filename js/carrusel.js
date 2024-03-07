@@ -1,8 +1,8 @@
     // generamos un arreglo de imagenes
     const arregloDeImagnes = [
-        '../img/imgCarrusel/carrusel1.jpg',
-        '../img/imgCarrusel/carrusel2.jpg',
-        '../img/imgCarrusel/carrusel3.jpg'
+        'img/imgCarrusel/carrusel1.jpg',
+        'img/imgCarrusel/carrusel2.jpg',
+        'img/imgCarrusel/carrusel3.jpg'
     ];
 
     // apuntemos a el elemento imagen

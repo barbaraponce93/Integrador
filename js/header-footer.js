@@ -22,12 +22,12 @@ function cargarHeaderFooter() {
                 </div>
     
                 <div class="header-logo">
-                    <img src="../img/logo-transparente.png" alt="" id="logo-img">
+                    <img src="img/logo-transparente.png" alt="" id="logo-img">
                 </div>
     
     
                  <div class="header-carrito">
-                    <a href="carrito.html">  <img src="../img/carrito.png" alt="">
+                    <a href="carrito.html">  <img src="img/carrito.png" alt="">
                     <p>Mi carrito</p>
                      <p class="num-carrito" id="numCarrito">0</p></a>
                 </div>
@@ -57,12 +57,12 @@ function cargarHeaderFooter() {
         </div>
     
         <div class="header-logo">
-            <img src="../img/logo-transparente.png" alt="" id="logo-img">
+            <img src="img/logo-transparente.png" alt="" id="logo-img">
         </div>
     
     
         <div class="header-carrito">
-        <a href="carrito.html">  <img src="../img/carrito.png" alt="">
+        <a href="carrito.html">  <img src="img/carrito.png" alt="">
         <p>Mi carrito</p>
         <p class="num-carrito" id="numCarrito">0</p></a>
         
@@ -70,7 +70,7 @@ function cargarHeaderFooter() {
          </div>
             <div class="header-buscador">
             <input type="text" id="lupa">
-             <span><img src="../img/lupa.png" alt="" class="lupa-icono"></span>
+             <span><img src="img/lupa.png" alt="" class="lupa-icono"></span>
             <div id="resultado"></div>
         </div>
     
@@ -113,28 +113,28 @@ function cargarHeaderFooter() {
     <div class="contacto">
         <span>Contáctanos</span>
         <ul>
-            <li><img src="../img/whatsapp.png" alt="" class="contacto-img"> &nbsp; 351123456</li>
-            <li><img src="../img/mail.png" alt="" class="contacto-img">&nbsp; blancosdachary@gmail.com</li>
-            <li><img src="../img/ubicacion.png" alt="" class="contacto-img"> &nbsp;La paz 175</li>
+            <li><img src="img/whatsapp.png" alt="" class="contacto-img"> &nbsp; 351123456</li>
+            <li><img src="img/mail.png" alt="" class="contacto-img">&nbsp; blancosdachary@gmail.com</li>
+            <li><img src="img/ubicacion.png" alt="" class="contacto-img"> &nbsp;La paz 175</li>
         </ul>
     </div>
 
     <div class="tarjetas">
         <span>Medios de pago</span>
         <ul>
-            <li><img src="../img/americanexpress.png" alt="" class="img-tarjetas"></li>
-            <li><img src="../img/cabal.png" alt="" class="img-tarjetas"></li>
-            <li><img src="../img/cencosud.png" alt="" class="img-tarjetas"></li>
-            <li><img src="../img/dinersclubtarjeta.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/americanexpress.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/cabal.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/cencosud.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/dinersclubtarjeta.png" alt="" class="img-tarjetas"></li>
             <br>
-            <li><img src="../img/mastercard.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/mastercard.png" alt="" class="img-tarjetas"></li>
             
-            <li><img src="../img/pagofacil.png" alt="" class="img-tarjetas"></li>
-            <li><img src="../img/rapipago.png" alt="" class="img-tarjetas"></li>
-            <li><img src="../img/tarjeta-naranja.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/pagofacil.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/rapipago.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/tarjeta-naranja.png" alt="" class="img-tarjetas"></li>
             <br>
-            <li><img src="../img/visa.png" alt="" class="img-tarjetas"></li>
-            <li><img src="../img/americanexpress.png" alt="" class="img-tarjetas"> </li>
+            <li><img src="img/visa.png" alt="" class="img-tarjetas"></li>
+            <li><img src="img/americanexpress.png" alt="" class="img-tarjetas"> </li>
         </ul>
     </div>
 

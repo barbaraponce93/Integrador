@@ -5,7 +5,7 @@ var productosArray = [
     {
         id: "sabana01",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño Floral",
-        imagen: "../img/productos/cama/sabanas/2plazas1.webp",
+        imagen: "img/productos/cama/sabanas/2plazas1.webp",
         precio: 35000,
         categoria: {
             nombre: "Sabanas",
@@ -16,7 +16,7 @@ var productosArray = [
     {
         id: "sabana02",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño Lineas",
-        imagen: "../img/productos/cama/sabanas/2plazas2.webp",
+        imagen: "img/productos/cama/sabanas/2plazas2.webp",
         precio: 35000,
         categoria: {
             nombre: "Sabanas",
@@ -27,7 +27,7 @@ var productosArray = [
     {
         id: "sabana03",/*este el id del prod */
         titulo: "Sabana 2 plazas- Color claro",
-        imagen: "../img/productos/cama/sabanas/2plazas3.webp",
+        imagen: "img/productos/cama/sabanas/2plazas3.webp",
         precio: 38000,
         categoria: {
             nombre: "Sabanas",
@@ -38,7 +38,7 @@ var productosArray = [
     {
         id: "sabana04",/*este el id del prod */
         titulo: "Sabana 2 plazas- Blanco puro",
-        imagen: "../img/productos/cama/sabanas/2plazas4.webp",
+        imagen: "img/productos/cama/sabanas/2plazas4.webp",
         precio: 38000,
         categoria: {
             nombre: "Sabanas",
@@ -49,7 +49,7 @@ var productosArray = [
     {
         id: "sabana05",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño Lila",
-        imagen: "../img/productos/cama/sabanas/2plazas5.webp",
+        imagen: "img/productos/cama/sabanas/2plazas5.webp",
         precio: 35000,
         categoria: {
             nombre: "Sabanas",
@@ -60,7 +60,7 @@ var productosArray = [
     {
         id: "sabana06",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño Beige Lineas",
-        imagen: "../img/productos/cama/sabanas/sabana6.webp",
+        imagen: "img/productos/cama/sabanas/sabana6.webp",
         precio: 30000,
         categoria: {
             nombre: "Sabanas",
@@ -72,7 +72,7 @@ var productosArray = [
     {
         id: "sabana07",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño impactante",
-        imagen: "../img/productos/cama/sabanas/sabana7.webp",
+        imagen: "img/productos/cama/sabanas/sabana7.webp",
         precio: 40000,
         categoria: {
             nombre: "Sabanas",
@@ -83,7 +83,7 @@ var productosArray = [
     {
         id: "sabana08",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño Beige de lujo",
-        imagen: "../img/productos/cama/sabanas/sabana8.webp",
+        imagen: "img/productos/cama/sabanas/sabana8.webp",
         precio: 45000,
         categoria: {
             nombre: "Sabanas",
@@ -94,7 +94,7 @@ var productosArray = [
     {
         id: "sabana09",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño Azul",
-        imagen: "../img/productos/cama/sabanas/sabana9.webp",
+        imagen: "img/productos/cama/sabanas/sabana9.webp",
         precio: 45000,
         categoria: {
             nombre: "Sabanas",
@@ -105,7 +105,7 @@ var productosArray = [
     {
         id: "sabana10",/*este el id del prod */
         titulo: "Sabana 2 plazas- Diseño Coral Delicado",
-        imagen: "../img/productos/cama/sabanas/sabana10.webp",
+        imagen: "img/productos/cama/sabanas/sabana10.webp",
         precio: 35000,
         categoria: {
             nombre: "Sabanas",
@@ -119,7 +119,7 @@ var productosArray = [
     {
         id: "cubrecama01",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Lila",
-        imagen: "../img/productos/cama/cubrecama/cubrecama1.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama1.webp",
         precio: 38000,
         categoria: {
             nombre: "Cubrecamas",
@@ -130,7 +130,7 @@ var productosArray = [
     {
         id: "cubrecama02",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Turquesa  Quilt Reversible",
-        imagen: "../img/productos/cama/cubrecama/cubrecama2.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama2.webp",
         precio: 38000,
         categoria: {
             nombre: "Cubrecamas",
@@ -141,7 +141,7 @@ var productosArray = [
     {
         id: "cubrecama03",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Turquesa  Quilt Reversible",
-        imagen: "../img/productos/cama/cubrecama/cubrecama3.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama3.webp",
         precio: 38000,
         categoria: {
             nombre: "Cubrecamas",
@@ -152,7 +152,7 @@ var productosArray = [
     {
         id: "cubrecama04",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Gris Quilt Reversible",
-        imagen: "../img/productos/cama/cubrecama/cubrecama4.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama4.webp",
         precio: 38000,
         categoria: {
             nombre: "Cubrecamas",
@@ -163,7 +163,7 @@ var productosArray = [
     {
         id: "cubrecama05",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño verde geometrico",
-        imagen: "../img/productos/cama/cubrecama/cubrecama5.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama5.webp",
         precio: 42000,
         categoria: {
             nombre: "Cubrecamas",
@@ -174,7 +174,7 @@ var productosArray = [
     {
         id: "cubrecama06",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Beige  Quilt",
-        imagen: "../img/productos/cama/cubrecama/cubrecama6.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama6.webp",
         precio: 38000,
         categoria: {
             nombre: "Cubrecamas",
@@ -185,7 +185,7 @@ var productosArray = [
     {
         id: "cubrecama07",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Verde agua Quilt",
-        imagen: "../img/productos/cama/cubrecama/cubrecama7.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama7.webp",
         precio: 38000,
         categoria: {
             nombre: "Cubrecamas",
@@ -196,7 +196,7 @@ var productosArray = [
     {
         id: "cubrecama08",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño estampado ",
-        imagen: "../img/productos/cama/cubrecama/cubrecama8.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama8.webp",
         precio: 42000,
         categoria: {
             nombre: "Cubrecamas",
@@ -207,7 +207,7 @@ var productosArray = [
     {
         id: "cubrecama09",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Estampa Indú",
-        imagen: "../img/productos/cama/cubrecama/cubrecama9.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama9.webp",
         precio: 45000,
         categoria: {
             nombre: "Cubrecamas",
@@ -218,7 +218,7 @@ var productosArray = [
     {
         id: "cubrecama10",/*este el id del prod */
         titulo: "Cubrecama 2 plazas- Diseño Rombos reversible",
-        imagen: "../img/productos/cama/cubrecama/cubrecama10.webp",
+        imagen: "img/productos/cama/cubrecama/cubrecama10.webp",
         precio: 42000,
         categoria: {
             nombre: "Cubrecamas",
@@ -232,7 +232,7 @@ var productosArray = [
     {
         id: "acolchado01",/*este el id del prod */
         titulo: "Acolchado 2 plazas- Estampado claro con piel",
-        imagen: "../img/productos/cama/acolchado/acolchado1.webp",
+        imagen: "img/productos/cama/acolchado/acolchado1.webp",
         precio: 50000,
         categoria: {
             nombre: "Acolchados",
@@ -243,7 +243,7 @@ var productosArray = [
     {
         id: "acolchado02",/*este el id del prod */
         titulo: "Acolchado 2 plazas- Estampado beige con piel",
-        imagen: "../img/productos/cama/acolchado/acolchado2.webp",
+        imagen: "img/productos/cama/acolchado/acolchado2.webp",
         precio: 58000,
         categoria: {
             nombre: "Acolchados",
@@ -254,7 +254,7 @@ var productosArray = [
     {
         id: "acolchado03",/*este el id del prod */
         titulo: "Acolchado 2 plazas- Rosa con lineas",
-        imagen: "../img/productos/cama/acolchado/acolchado3.webp",
+        imagen: "img/productos/cama/acolchado/acolchado3.webp",
         precio: 48000,
         categoria: {
             nombre: "Acolchados",
@@ -265,7 +265,7 @@ var productosArray = [
     {
         id: "acolchado04",/*este el id del prod */
         titulo: "Acolchado 1 plazas- Estampado Dinosaurios",
-        imagen: "../img/productos/cama/acolchado/acolchado4.webp",
+        imagen: "img/productos/cama/acolchado/acolchado4.webp",
         precio: 40000,
         categoria: {
             nombre: "Acolchados",
@@ -277,7 +277,7 @@ var productosArray = [
     {
         id: "acolchado05",/*este el id del prod */
         titulo: "Acolchado 1 plazas- Minnie",
-        imagen: "../img/productos/cama/acolchado/acolchado5.webp",
+        imagen: "img/productos/cama/acolchado/acolchado5.webp",
         precio: 42000,
         categoria: {
             nombre: "Acolchados",
@@ -288,7 +288,7 @@ var productosArray = [
     {
         id: "acolchado06",/*este el id del prod */
         titulo: "Acolchado 1 plazas- Frozen",
-        imagen: "../img/productos/cama/acolchado/acolchado6.webp",
+        imagen: "img/productos/cama/acolchado/acolchado6.webp",
         precio: 42000,
         categoria: {
             nombre: "Acolchados",
@@ -299,7 +299,7 @@ var productosArray = [
     {
         id: "acolchado07",/*este el id del prod */
         titulo: "Acolchado 1 plazas- Estampado MAR",
-        imagen: "../img/productos/cama/acolchado/acolchado7.webp",
+        imagen: "img/productos/cama/acolchado/acolchado7.webp",
         precio: 40000,
         categoria: {
             nombre: "Acolchados",
@@ -313,7 +313,7 @@ var productosArray = [
     {
         id: "toallon01",/*este el id del prod */
         titulo: "Set de toalla y toallon turquesa",
-        imagen: "../img/productos/toallas/set1.webp",
+        imagen: "img/productos/toallas/set1.webp",
         precio: 37500,
         categoria: {
             nombre: "Toallones",
@@ -324,7 +324,7 @@ var productosArray = [
     {
         id: "toallon02",/*este el id del prod */
         titulo: "Set de toalla y toallon bordo",
-        imagen: "../img/productos/toallas/set2.webp",
+        imagen: "img/productos/toallas/set2.webp",
         precio: 37500,
         categoria: {
             nombre: "Toallones",
@@ -335,7 +335,7 @@ var productosArray = [
     {
         id: "toallon03",/*este el id del prod */
         titulo: "Set de toalla y toallon beige",
-        imagen: "../img/productos/toallas/set3.webp",
+        imagen: "img/productos/toallas/set3.webp",
         precio: 35000,
         categoria: {
             nombre: "Toallones",
@@ -346,7 +346,7 @@ var productosArray = [
     {
         id: "toallon04",/*este el id del prod */
         titulo: "Set de toalla y toallon de lujo",
-        imagen: "../img/productos/toallas/set4.webp",
+        imagen: "img/productos/toallas/set4.webp",
         precio: 49000,
         categoria: {
             nombre: "Toallones",
@@ -357,7 +357,7 @@ var productosArray = [
     {
         id: "toallon05",/*este el id del prod */
         titulo: "Set de toalla y toallon naranja",
-        imagen: "../img/productos/toallas/set5.webp",
+        imagen: "img/productos/toallas/set5.webp",
         precio: 37500,
         categoria: {
             nombre: "Toallones",
@@ -368,7 +368,7 @@ var productosArray = [
     {
         id: "toallon06",/*este el id del prod */
         titulo: "Set de toalla y toallon colores",
-        imagen: "../img/productos/toallas/set6.webp",
+        imagen: "img/productos/toallas/set6.webp",
         precio: 32000,
         categoria: {
             nombre: "Toallones",
@@ -380,7 +380,7 @@ var productosArray = [
     {
         id: "toallon07",/*este el id del prod */
         titulo: "Toallon Gris topo",
-        imagen: "../img/productos/toallas/set7.webp",
+        imagen: "img/productos/toallas/set7.webp",
         precio: 22500,
         categoria: {
             nombre: "Toallones",
@@ -391,7 +391,7 @@ var productosArray = [
     {
         id: "toallon05",/*este el id del prod */
         titulo: "Toallon playero",
-        imagen: "../img/productos/toallas/set8.webp",
+        imagen: "img/productos/toallas/set8.webp",
         precio: 20000,
         categoria: {
             nombre: "Toallones",
@@ -406,7 +406,7 @@ var productosArray = [
     {
         id: "bata01",/*este el id del prod */
         titulo: "Bata hotel",
-        imagen: "../img/productos/batas/bata1.webp",
+        imagen: "img/productos/batas/bata1.webp",
         precio: 30000,
         categoria: {
             nombre: "Batas",
@@ -417,7 +417,7 @@ var productosArray = [
     {
         id: "bata02",/*este el id del prod */
         titulo: "Bata roja",
-        imagen: "../img/productos/batas/bata2.webp",
+        imagen: "img/productos/batas/bata2.webp",
         precio: 28000,
         categoria: {
             nombre: "Batas",
@@ -429,7 +429,7 @@ var productosArray = [
     {
         id: "bata03",/*este el id del prod */
         titulo: "Bata beige",
-        imagen: "../img/productos/batas/bata3.webp",
+        imagen: "img/productos/batas/bata3.webp",
         precio: 28000,
         categoria: {
             nombre: "Batas",
@@ -440,7 +440,7 @@ var productosArray = [
     {
         id: "bata04",/*este el id del prod */
         titulo: "Bata clara beige",
-        imagen: "../img/productos/batas/bata5.webp",
+        imagen: "img/productos/batas/bata5.webp",
         precio: 20000,
         categoria: {
             nombre: "Batas",
@@ -454,7 +454,7 @@ var productosArray = [
     {
         id: "cortina01",/*este el id del prod */
         titulo: "Cortina gris topo",
-        imagen: "../img/productos/cortinas/cortina1.webp",
+        imagen: "img/productos/cortinas/cortina1.webp",
         precio: 30000,
         categoria: {
             nombre: "Cortinas",
@@ -465,7 +465,7 @@ var productosArray = [
     {
         id: "cortina02",/*este el id del prod */
         titulo: "Cortina clara con lineas",
-        imagen: "../img/productos/cortinas/cortina2.webp",
+        imagen: "img/productos/cortinas/cortina2.webp",
         precio: 30000,
         categoria: {
             nombre: "Cortinas",
@@ -476,7 +476,7 @@ var productosArray = [
     {
         id: "cortina03",/*este el id del prod */
         titulo: "Cortina elegante bordo",
-        imagen: "../img/productos/cortinas/cortina3.webp",
+        imagen: "img/productos/cortinas/cortina3.webp",
         precio: 33000,
         categoria: {
             nombre: "Cortinas",
@@ -487,7 +487,7 @@ var productosArray = [
     {
         id: "cortina04",/*este el id del prod */
         titulo: "Cortina elegante gris oscuro",
-        imagen: "../img/productos/cortinas/cortina4.webp",
+        imagen: "img/productos/cortinas/cortina4.webp",
         precio: 33000,
         categoria: {
             nombre: "Cortinas",
@@ -498,7 +498,7 @@ var productosArray = [
     {
         id: "cortina05",/*este el id del prod */
         titulo: "Cortina lienzo",
-        imagen: "../img/productos/cortinas/cortina5.webp",
+        imagen: "img/productos/cortinas/cortina5.webp",
         precio: 27000,
         categoria: {
             nombre: "Cortinas",
@@ -509,7 +509,7 @@ var productosArray = [
     {
         id: "cortina06",/*este el id del prod */
         titulo: "Cortina baño blanca",
-        imagen: "../img/productos/cortinas/cortinabaño2.webp",
+        imagen: "img/productos/cortinas/cortinabaño2.webp",
         precio: 24000,
         categoria: {
             nombre: "Cortinas",
@@ -520,7 +520,7 @@ var productosArray = [
     {
         id: "cortina07",/*este el id del prod */
         titulo: "Cortina Baño Estampa",
-        imagen: "../img/productos/cortinas/cortinabaño3.webp",
+        imagen: "img/productos/cortinas/cortinabaño3.webp",
         precio: 20000,
         categoria: {
             nombre: "Cortinas",
@@ -531,7 +531,7 @@ var productosArray = [
     {
         id: "cortina08",/*este el id del prod */
         titulo: "Cortina Baño Estampa",
-        imagen: "../img/productos/cortinas/cortinabaño4.webp",
+        imagen: "img/productos/cortinas/cortinabaño4.webp",
         precio: 20000,
         categoria: {
             nombre: "Cortinas",
@@ -542,7 +542,7 @@ var productosArray = [
     {
         id: "cortina09",/*este el id del prod */
         titulo: "Cortina Baño beige",
-        imagen: "../img/productos/cortinas/cortinabaño1.webp",
+        imagen: "img/productos/cortinas/cortinabaño1.webp",
         precio: 20000,
         categoria: {
             nombre: "Cortinas",
@@ -556,7 +556,7 @@ var productosArray = [
     {
         id: "almohadon01",/*este el id del prod */
         titulo: "Almohadon gris con borlas",
-        imagen: "../img/productos/almohadones/almohadon1.webp",
+        imagen: "img/productos/almohadones/almohadon1.webp",
         precio: 13000,
         categoria: {
             nombre: "Almohadones",
@@ -567,7 +567,7 @@ var productosArray = [
     {
         id: "almohadon02",/*este el id del prod */
         titulo: "Almohadon lienzo con diseño",
-        imagen: "../img/productos/almohadones/almohadon2.webp",
+        imagen: "img/productos/almohadones/almohadon2.webp",
         precio: 12000,
         categoria: {
             nombre: "Almohadones",
@@ -578,7 +578,7 @@ var productosArray = [
     {
         id: "almohadon03",/*este el id del prod */
         titulo: "Almohadon turquesa con borlas",
-        imagen: "../img/productos/almohadones/almohadon3.webp",
+        imagen: "img/productos/almohadones/almohadon3.webp",
         precio: 12000,
         categoria: {
             nombre: "Almohadones",
@@ -589,7 +589,7 @@ var productosArray = [
     {
         id: "almohadon04",/*este el id del prod */
         titulo: "Almohadon con diseño",
-        imagen: "../img/productos/almohadones/almohadon4.webp",
+        imagen: "img/productos/almohadones/almohadon4.webp",
         precio: 12000,
         categoria: {
             nombre: "Almohadones",
@@ -600,7 +600,7 @@ var productosArray = [
     {
         id: "almohadon05",/*este el id del prod */
         titulo: "Almohadon peludo",
-        imagen: "../img/productos/almohadones/almohadon5.webp",
+        imagen: "img/productos/almohadones/almohadon5.webp",
         precio: 14000,
         categoria: {
             nombre: "Almohadones",
