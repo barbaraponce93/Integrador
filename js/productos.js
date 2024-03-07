@@ -619,7 +619,7 @@ var contenedorProductos = document.getElementById("cont-productos");
 var botonesFiltro = document.querySelectorAll(".botones-filtro");
 var tituloPrincipal = document.querySelector("#tituloPrincipal");
 var botonesAgregar = document.querySelectorAll(".boton-agregar-producto");
-var numCarrito = document.querySelector(".num-carrito");
+
 
 console.log(contenedorProductos); // lo hizo lucas para ver que tiene
 console.log(typeof contenedorProductos) // lo hizo lucas para ver que tiene
@@ -716,9 +716,10 @@ function agregarAlCarrito(evento) {//el currentTarget es una prop para referirse
 }
 
 function actualizarNumCarrito() {
+    var numCarrito = document.querySelector(".num-carrito");
     var nuevoNumero = productosEncarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numCarrito.innerText = nuevoNumero;
-     console.log(numCarrito)
+   
 
 }
 

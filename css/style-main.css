@@ -5,7 +5,7 @@ body{
 .div-main {
   /* min-height: 800px; */
 
-  border: 3px violet solid;
+ /* border: 3px violet solid;*/
   margin: 0.5rem;
   display: inline-block;
 
@@ -55,6 +55,118 @@ section img{
 }
 #section-seg-main img:hover {
   filter: brightness(0.7); 
+}
+
+
+.contenedor-destacados{
+  padding: 100px 0;
+  display: flex;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*border: 2px solid seagreen;*/
+ 
+}
+
+.contenedor-destacados h2{
+  position: absolute;
+  top:0px;
+  right: 630px;
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 25px;
+  
+
+}
+
+
+.destacado{
+
+  text-align: center;
+  flex-basis: calc(25%-20px);
+  box-shadow: 0 0 20px rgba(0, 0, 0,1);
+  padding: 20px;
+  margin-right: 60px;
+  margin-left: 70px;
+  width: 250px;
+  height: 400px;
+  cursor: pointer;
+
+}
+.destacado img{
+  width: 400px;
+  height: 300px;
+  margin-bottom: 10px;
+
+}
+.contenedor-destacados a{
+  text-decoration: none;
+  color: black;
+}
+
+.contenedor-destacados a:hover{
+  color: rgb(146, 138, 138);
+}
+
+
+
+
+
+
+
+
+
+.contenedor-mapa{
+  position: relative;
+  align-items: center;
+ 
+  text-align: center;
+
+}
+
+.titulo-mapa{
+  font-size:26px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contenedor-mapa p{
+font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.mapa{
+  padding: 30px 30px ;
+
+
+}
+
+.ambiente{
+  display: flex;
+ /* border: 2px solid seagreen;*/
+  position: relative;
+  text-align: center;
+
+}
+.ambiente img{
+  width: 150px;
+  height: 220px;
+  margin-top: 30px;
+
+}
+.ambiente p{
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align:left;
+ padding: 30px 40px;
+ margin: 50px;
+}
+.ambiente h3{
+  position: absolute;
+  left: 95px;
+  top: 10px;
+  font-weight: lighter;
+  font-size: 28px;
+
 }
 
 
